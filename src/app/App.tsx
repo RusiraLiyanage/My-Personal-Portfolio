@@ -653,7 +653,7 @@ function HeroSection() {
       <div style={{ position: "absolute", top: "50%", left: "40%", width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 70%)", pointerEvents: "none", animation: "drift3 18s ease-in-out infinite" }} />
 
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "96px 40px 72px", width: "100%" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 480px", gap: 56, alignItems: "start" }}>
+        <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 480px", gap: 56, alignItems: "start" }}>
 
           {/* LEFT: Text */}
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}>
@@ -724,7 +724,7 @@ function HeroSection() {
 
           {/* RIGHT: Profile photo */}
           <motion.div
-            className="hidden md:block"
+            className="hero-profile-container hidden md:block"
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -774,10 +774,10 @@ const lineVariant = {
 function AboutSection() {
   return (
     <section id="about" style={{ padding: "88px 0", background: "#F8F9FA", overflow: "hidden" }}>
-      <div style={{ maxWidth: 1440, margin: "0 auto", padding: "0 20px" }}>
+      <div className="section-container" style={{ maxWidth: 1440, margin: "0 auto", padding: "0 20px" }}>
         <SectionHeader number="01" title="About Me" />
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 52, alignItems: "start" }}>
+        <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 52, alignItems: "start" }}>
           {/* LEFT: personal narrative */}
           <motion.div variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
 
@@ -3405,7 +3405,7 @@ function ProjectsSection() {
         </FadeUp>
 
         {/* 2-column grid - remaining 6 cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+        <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
 
           {/* Sample Assist - Callout Management */}
           <FadeUp delay={0.05}>
@@ -3897,8 +3897,8 @@ function TechStackSection() {
     <section id="techstack" style={{ padding: "88px 0", background: "#fff" }}>
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "0 20px" }}>
         <SectionHeader number="04" title="Tech Stack" />
-        <div style={{ margin: "0 20px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(290px,1fr))", gap: 14 }}>
+        <div className="content-cards" style={{ margin: "0 20px" }}>
+          <div className="tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(290px,1fr))", gap: 14 }}>
           {TECH_STACK.map((cat, i) => (
             <FadeUp key={cat.category} delay={i * 0.07}>
               <div style={STRIPE}>
@@ -4799,7 +4799,7 @@ function ContactSection() {
             </p>
 
             {/* Contact Grid */}
-            <div style={{
+            <div className="contact-grid" style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gap: 20,
@@ -5041,15 +5041,100 @@ export default function App(props?: any) {
         ::-webkit-scrollbar-thumb { background: rgba(91,77,255,0.25); border-radius: 2px; }
         ::-webkit-scrollbar-thumb:hover { background: rgba(91,77,255,0.5); }
         * { box-sizing: border-box; }
+        
+        /* Mobile Portrait Responsive Styles */
         @media (max-width: 767px) {
           .hidden.md\\:block { display: none !important; }
           .hidden.md\\:grid { display: none !important; }
           .hidden.md\\:flex { display: none !important; }
+          
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+            padding: 80px 20px 40px !important;
+          }
+          
+          .hero-profile-container {
+            display: block !important;
+            order: -1 !important;
+            max-width: 280px !important;
+            margin: 0 auto !important;
+            padding: 0 !important;
+          }
+          
+          .hero-profile-container > div {
+            width: 100% !important;
+          }
+          
+          section {
+            padding: 48px 0 !important;
+          }
+          
+          .section-container {
+            padding: 0 16px !important;
+          }
+          
+          .content-cards {
+            margin: 0 8px !important;
+          }
+          
+          .projects-grid {
+            grid-template-columns: 1fr !important;
+          }
+          
+          .about-grid {
+            grid-template-columns: 1fr !important;
+            gap: 24px !important;
+          }
+          
+          .tech-grid {
+            grid-template-columns: 1fr !important;
+          }
+          
+          .contact-grid {
+            grid-template-columns: 1fr !important;
+            gap: 16px !important;
+          }
+          
+          .MuiDialog-paper {
+            margin: 16px !important;
+            max-width: calc(100% - 32px) !important;
+          }
+          
+          /* Honors & Awards grid */
+          section#honors div[style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+          }
+          
+          /* Any 2-column grids in sections */
+          section div[style*='gridTemplateColumns: "1fr 1fr"'],
+          section div[style*="gridTemplateColumns: '1fr 1fr'"] {
+            grid-template-columns: 1fr !important;
+            gap: 24px !important;
+          }
+          
+          /* Adjust modal/feature sections */
+          section div[style*="position: sticky"] {
+            position: relative !important;
+            grid-template-columns: 1fr !important;
+          }
         }
+        
         @media (min-width: 768px) {
           .hidden.md\\:block { display: block !important; }
           .hidden.md\\:grid { display: grid !important; }
           .hidden.md\\:flex { display: flex !important; }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .hero-grid {
+            grid-template-columns: 1fr 320px !important;
+            gap: 40px !important;
+          }
+          
+          section {
+            padding: 64px 0 !important;
+          }
         }
       `}</style>
 
