@@ -136,7 +136,7 @@ const muiTheme = createTheme({
 
 // ── Data ──────────────────────────────────────────���───────────────────────────
 
-const RESUME_URL = "https://1drv.ms/b/c/7e124fed5ca65adc/IQBhM4oqgZjtT7ahjUbWDAJ0AXp8GT0BlwbjVYiUkwHtkRY?e=aT8wVR";
+const RESUME_URL = "https://1drv.ms/b/c/7e124fed5ca65adc/IQCBCxW68qbMS4NkfADszIBoAYNGBShqDkO7755uCMUbYOA?e=UTE4hV";
 
 const ALL_SECTION_IDS = [
   "hero","about","projects","publications","techstack",
@@ -3678,79 +3678,79 @@ function ProjectsSection() {
 
       {/* ── All Modals ─────────────────────────────────────────────── */}
       <Dialog open={openCoopersModal} onClose={() => setOpenCoopersModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenCoopersModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><CoopersProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><CoopersProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openSAModal} onClose={() => setOpenSAModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenSAModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><SampleAssistProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><SampleAssistProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openEVModal} onClose={() => setOpenEVModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenEVModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><EVProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><EVProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openFuelModal} onClose={() => setOpenFuelModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenFuelModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><FuelProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><FuelProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openCMSModal} onClose={() => setOpenCMSModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenCMSModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><CMSProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><CMSProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openPDFModal} onClose={() => setOpenPDFModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenPDFModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><PDFProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><PDFProjectSection /></div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openRPAModal} onClose={() => setOpenRPAModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "95vw", maxHeight: "90vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenRPAModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", maxHeight: "90vh" }}><RPAProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}><RPAProjectSection /></div>
         </DialogContent>
       </Dialog>
 
