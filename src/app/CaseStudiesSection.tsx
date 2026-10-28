@@ -6,15 +6,15 @@ import { FadeUp, BrowserChrome, SectionHeader } from "./shared";
 import profileImage from "../imports/personalized_Image.jpeg";
 import vincentPhoto from "../imports/vincent.jpeg";
 import lamiaPhoto from "../imports/lamia.jpeg";
-import authCustomerExpiry from "../imports/Screenshot_2026-07-12_at_1.44.47_pm.png";
-import authAdminExpiry from "../imports/Screenshot_2026-07-12_at_1.45.04_pm.png";
-import authCustomerLogin from "../imports/Screenshot_2026-07-12_at_1.47.33_pm.png";
+import authCustomerExpiry from "../imports/Screenshot_2026-07-12_at_1.44.47_pm.optimized.webp";
+import authAdminExpiry from "../imports/Screenshot_2026-07-12_at_1.45.04_pm.optimized.webp";
+import authCustomerLogin from "../imports/Screenshot_2026-07-12_at_1.47.33_pm.optimized.webp";
 import authAdminLogin from "../imports/Screenshot_2026-07-12_at_2.17.51_pm.png";
-import awsCICDScreenshot from "../imports/Screenshot_2026-07-12_at_2.30.01_pm.png";
-import monorepoScreenshot from "../imports/Screenshot_2026-07-12_at_8.14.34_pm.png";
-import awsECSScreenshot from "../imports/Screenshot_2026-06-28_at_8.09.33_am.png";
-import redisWsAdminScreenshot from "../imports/Screenshot_2026-07-12_at_3.09.59_pm.png";
-import redisHairHistoryScreenshot from "../imports/Screenshot_2026-07-12_at_3.10.22_pm.png";
+import awsCICDScreenshot from "../imports/Screenshot_2026-07-12_at_2.30.01_pm.optimized.webp";
+import monorepoScreenshot from "../imports/Screenshot_2026-07-12_at_8.14.34_pm.optimized.webp";
+import awsECSScreenshot from "../imports/Screenshot_2026-06-28_at_8.09.33_am.optimized.webp";
+import redisWsAdminScreenshot from "../imports/Screenshot_2026-07-12_at_3.09.59_pm.optimized.webp";
+import redisHairHistoryScreenshot from "../imports/Screenshot_2026-07-12_at_3.10.22_pm.optimized.webp";
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
 
@@ -97,7 +97,7 @@ function AuthCaseStudy() {
             {AUTH_SCREENSHOTS.map(s => (
               <div key={s.caption} style={{ display: "flex", flexDirection: "column" as const, gap: 8 }}>
                 <BrowserChrome url={s.url} height={360}>
-                  <img src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top center", display: "block", transform: "scale(1.12)", transformOrigin: "top center" }} />
+                  <img loading="lazy" decoding="async" src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top center", display: "block", transform: "scale(1.12)", transformOrigin: "top center" }} />
                 </BrowserChrome>
                 <p style={{ fontSize: "0.82rem", color: "#6B7280", lineHeight: 1.5, margin: 0 }}>{s.caption}</p>
               </div>
@@ -192,7 +192,7 @@ function AWSCaseStudy() {
             {AWS_SCREENSHOTS.map((s) => (
               <div key={s.url}>
                 <BrowserChrome url={s.url} height={360}>
-                  <img src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top left", display: "block", transform: "scale(1.12)", transformOrigin: "top left" }} />
+                  <img loading="lazy" decoding="async" src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top left", display: "block", transform: "scale(1.12)", transformOrigin: "top left" }} />
                 </BrowserChrome>
                 <p style={{ fontSize: "0.82rem", color: "#6B7280", margin: "6px 0 0", lineHeight: 1.4, textAlign: "center" }}>{s.caption}</p>
               </div>
@@ -315,7 +315,7 @@ function MonorepoCaseStudy() {
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10, flexWrap: "wrap" }}>
               {/* PNPM icon */}
               <span style={{ background: MONO_ORANGE, borderRadius: 6, padding: "3px 10px", fontSize: "0.72rem", fontWeight: 700, color: "#fff", letterSpacing: "0.04em", display: "flex", alignItems: "center", gap: 5 }}>
-                <img src="https://cdn.simpleicons.org/pnpm/ffffff" alt="pnpm" width={12} height={12} style={{ display: "inline" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                <img loading="lazy" decoding="async" src="https://cdn.simpleicons.org/pnpm/ffffff" alt="pnpm" width={12} height={12} style={{ display: "inline" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
                 PNPM + Turborepo
               </span>
               <span style={{ background: "rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.85)", borderRadius: 6, padding: "3px 10px", fontSize: "0.72rem", fontWeight: 600 }}>{"Cooper's"} Barber Shop</span>
@@ -379,7 +379,7 @@ function MonorepoCaseStudy() {
 
           {/* Screenshot */}
           <BrowserChrome url="SA-FULLSTACK-CHALLENGE-RUSIRA — auth-service.ts" height={340}>
-            <img src={monorepoScreenshot} alt="Monorepo structure in VS Code" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top left", display: "block" }} />
+            <img loading="lazy" decoding="async" src={monorepoScreenshot} alt="Monorepo structure in VS Code" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top left", display: "block" }} />
           </BrowserChrome>
           <p style={{ fontSize: "0.82rem", color: "#6B7280", margin: "8px 0 0", lineHeight: 1.4, textAlign: "center" }}>
             Monorepo in VS Code - apps and shared packages visible in the sidebar alongside the auth service implementation
@@ -475,7 +475,7 @@ function RedisWsCaseStudy() {
             {REDIS_SCREENSHOTS.map((s) => (
               <div key={s.url + s.caption}>
                 <BrowserChrome url={s.url} height={360}>
-                  <img src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top left", display: "block", transform: "scale(1.12)", transformOrigin: "top left" }} />
+                  <img loading="lazy" decoding="async" src={s.src} alt={s.caption} style={{ width: "115%", height: "115%", objectFit: "cover", objectPosition: "top left", display: "block", transform: "scale(1.12)", transformOrigin: "top left" }} />
                 </BrowserChrome>
                 <p style={{ fontSize: "0.82rem", color: "#6B7280", margin: "6px 0 0", lineHeight: 1.4, textAlign: "center" }}>{s.caption}</p>
               </div>
@@ -652,7 +652,7 @@ function TourismCaseStudy() {
                   border: member.me ? `1px solid ${TOURISM_TEAL}22` : "1px solid rgba(0,0,0,0.06)",
                   borderRadius: 10, padding: "8px 11px" }}>
                   {member.photo
-                    ? <img src={member.photo} alt={member.name} style={{ width: 34, height: 34, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: `2px solid ${member.me ? TOURISM_TEAL : "rgba(0,0,0,0.1)"}` }} />
+                    ? <img loading="lazy" decoding="async" src={member.photo} alt={member.name} style={{ width: 34, height: 34, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: `2px solid ${member.me ? TOURISM_TEAL : "rgba(0,0,0,0.1)"}` }} />
                     : <div style={{ width: 34, height: 34, borderRadius: "50%", background: `${TOURISM_TEAL}12`, border: `1px solid ${TOURISM_TEAL}25`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.62rem", color: TOURISM_TEAL }}>{member.initials}</span>
                       </div>
@@ -757,7 +757,7 @@ function SoftwareTestingCaseStudy() {
                   background: member.me ? `${TEST_INDIGO}08` : "#F9FAFB",
                   border: member.me ? `1px solid ${TEST_INDIGO}22` : "1px solid rgba(0,0,0,0.06)",
                   borderRadius: 10, padding: "9px 12px" }}>
-                  <img src={member.photo} alt={member.name} style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: `2px solid ${member.me ? TEST_INDIGO : "rgba(0,0,0,0.1)"}` }} />
+                  <img loading="lazy" decoding="async" src={member.photo} alt={member.name} style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: `2px solid ${member.me ? TEST_INDIGO : "rgba(0,0,0,0.1)"}` }} />
                   <div style={{ minWidth: 0 }}>
                     <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.8rem", color: "#0C0C0C" }}>{member.name}</div>
                     <div style={{ fontSize: "0.66rem", color: member.me ? TEST_INDIGO : "#9CA3AF", fontWeight: member.me ? 700 : 500, marginTop: 1 }}>{member.role}</div>

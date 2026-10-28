@@ -36,7 +36,7 @@ export function TechBadge({ slug, name, color, emoji }: { slug?: string; name: s
         {emoji ? (
           <span style={{ fontSize: "1.3rem" }}>{emoji}</span>
         ) : slug ? (
-          <img src={`https://cdn.simpleicons.org/${slug}/${color.replace("#", "")}`} alt={name} style={{ width: 24, height: 24 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${slug}/${color.replace("#", "")}`} alt={name} style={{ width: 24, height: 24 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
         ) : null}
       </div>
       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.65rem", fontWeight: 600, color: "#374151", textAlign: "center", lineHeight: 1.3 }}>{name}</span>
@@ -76,7 +76,7 @@ export function TechRow({ group, color, items }: { group: string; color: string;
             onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 16px ${item.color}40`; }}
             onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
           >
-            <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+            <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
             <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.75rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" as const }}>{item.name}</span>
           </motion.div>
         ))}

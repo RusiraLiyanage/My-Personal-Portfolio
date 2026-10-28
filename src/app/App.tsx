@@ -28,7 +28,7 @@ import thushalPhoto from "../imports/thushal.jpeg";
 import pintoPhoto from "../imports/pinto.jpeg";
 import thushalPhoto1 from "../imports/thushal-1.jpeg";
 import kishenPhoto1 from "../imports/kishen-1.jpeg";
-import sujaniPhoto from "../imports/sujani.png";
+import sujaniPhoto from "../imports/sujani.optimized.webp";
 import disniPhoto from "../imports/disni.jpeg";
 import innomenteLogoImg from "../imports/Screenshot_2026-07-12_at_12.01.58_pm.png";
 import sampleAssistLogoImg from "../imports/sampleassist.png";
@@ -38,11 +38,6 @@ import sliitLogoImg from "../imports/sliit.png";
 import anandaLogoImg from "../imports/ananda.png";
 import performanceEduLogoImg from "../imports/images__1_.jpeg";
 
-import { CMSProjectSection, CMS_INDIGO, CMS_DARK } from "./CMSSection";
-import { CaseStudiesSection } from "./CaseStudiesSection";
-import { PDFProjectSection, PDF_BLUE, PDF_DARK, PDF_SLATE } from "./PDFSection";
-import { RPAProjectSection, RPA_TEAL, RPA_DARK } from "./RPASection";
-import { FunFactsSection } from "./FunFactsSection";
 import metatechnoLogo from "../imports/metatechno.jpeg";
 import sampleAssistCert from "../imports/1748063596284.png";
 import ifsWinnerCard from "../imports/474657377_928817359340891_4787763857337460422_n.jpg";
@@ -59,43 +54,60 @@ import githubActionsCert from "../imports/1779170207263.jpeg";
 import dockerKubernetesCert from "../imports/1780983776411.jpeg";
 
 import { FadeUp, RevealLeft, BrowserChrome } from "./shared";
-import coopersScreenshot  from "../imports/Screenshot_2026-07-07_at_12.24.16_pm.png";
-import coopersAI1 from "../imports/Screenshot_2026-07-08_at_4.27.19_am.png";
-import coopersAI2 from "../imports/Screenshot_2026-07-08_at_4.27.28_am.png";
-import coopersAI3 from "../imports/Screenshot_2026-07-08_at_4.31.07_am.png";
-import coopersSchedule1 from "../imports/Screenshot_2026-07-08_at_5.43.42_pm.png";
-import coopersSchedule2 from "../imports/Screenshot_2026-07-08_at_5.43.52_pm.png";
-import coopersSchedule3 from "../imports/Screenshot_2026-07-08_at_5.44.02_pm.png";
-import coopersAdmin1 from "../imports/Screenshot_2026-07-08_at_6.09.41_pm.png";
-import coopersAdmin2 from "../imports/Screenshot_2026-07-08_at_6.09.56_pm.png";
-import coopersAdmin3 from "../imports/Screenshot_2026-07-08_at_6.10.25_pm.png";
-import photoSydney from "../imports/Screenshot_2026-07-07_at_11.24.27_am.png";
-import photoGraduation from "../imports/Screenshot_2026-07-07_at_11.25.04_am.png";
-import photoStadium from "../imports/IMG_3625.JPG";
-import photoFamily from "../imports/Screenshot_2026-07-07_at_11.26.07_am.png";
-import photoConcert from "../imports/IMG_3651.JPG";
-import photoConcert2 from "../imports/IMG_3651-1.JPG";
+import coopersScreenshot  from "../imports/Screenshot_2026-07-07_at_12.24.16_pm.optimized.webp";
+import coopersAI1 from "../imports/Screenshot_2026-07-08_at_4.27.19_am.optimized.webp";
+import coopersAI2 from "../imports/Screenshot_2026-07-08_at_4.27.28_am.optimized.webp";
+import coopersAI3 from "../imports/Screenshot_2026-07-08_at_4.31.07_am.optimized.webp";
+import coopersSchedule1 from "../imports/Screenshot_2026-07-08_at_5.43.42_pm.optimized.webp";
+import coopersSchedule2 from "../imports/Screenshot_2026-07-08_at_5.43.52_pm.optimized.webp";
+import coopersSchedule3 from "../imports/Screenshot_2026-07-08_at_5.44.02_pm.optimized.webp";
+import coopersAdmin1 from "../imports/Screenshot_2026-07-08_at_6.09.41_pm.optimized.webp";
+import coopersAdmin2 from "../imports/Screenshot_2026-07-08_at_6.09.56_pm.optimized.webp";
+import coopersAdmin3 from "../imports/Screenshot_2026-07-08_at_6.10.25_pm.optimized.webp";
+import photoSydney from "../imports/Screenshot_2026-07-07_at_11.24.27_am.optimized.webp";
+import photoGraduation from "../imports/Screenshot_2026-07-07_at_11.25.04_am.optimized.webp";
+import photoStadium from "../imports/IMG_3625.optimized.webp";
+import photoFamily from "../imports/Screenshot_2026-07-07_at_11.26.07_am.optimized.webp";
+import photoConcert from "../imports/IMG_3651.optimized.webp";
+import photoConcert2 from "../imports/IMG_3651-1.optimized.webp";
 import sampleAssistLogo from "../imports/Lz4lUXSU9geUQ7Shteza2ORUg5l1709176912817_200x200-1.png";
-import saDashboardSplit from "../imports/dashboardSplited.png";
-import saSystemAnalysis from "../imports/Screenshot_2026-07-11_at_10.34.41_pm.png";
-import saTeamSlide from "../imports/Screenshot_2026-07-11_at_10.35.23_pm.png";
-import saDesktopScreen from "../imports/Screenshot_2026-07-11_at_10.50.50_pm.png";
+import saDashboardSplit from "../imports/dashboardSplited.optimized.webp";
+import saSystemAnalysis from "../imports/Screenshot_2026-07-11_at_10.34.41_pm.optimized.webp";
+import saTeamSlide from "../imports/Screenshot_2026-07-11_at_10.35.23_pm.optimized.webp";
+import saDesktopScreen from "../imports/Screenshot_2026-07-11_at_10.50.50_pm.optimized.webp";
 import saClientADS from "../imports/logo.jpg";
 import saClientCQR from "../imports/images__1_.png";
-import evLogin from "../imports/login.png";
-import evUserDashboard from "../imports/user-dashboard.png";
-import evUserHistory from "../imports/user-history.png";
-import evUserCheckoutHistory from "../imports/user-checkout-history.png";
-import evChargingComplete from "../imports/charging-complete.png";
-import evAdminDashboard from "../imports/admin-dashboard.png";
-import evAdminMonitoring from "../imports/admin-monitoring.png";
-import evLocationManagement from "../imports/location-management.png";
-import saCollectionReports2 from "../imports/collectionReports2.png";
-import saCollectionReports5 from "../imports/collectionReports5.png";
-import saAccountingDash1 from "../imports/accountingDash1.png";
-import saAccountingDash2 from "../imports/accountingDash2.png";
-import saCollectorsCalendar from "../imports/collectorsA1.png";
-import saFaq from "../imports/faq2.png";
+import evLogin from "../imports/login.optimized.webp";
+import evUserDashboard from "../imports/user-dashboard.optimized.webp";
+import evUserHistory from "../imports/user-history.optimized.webp";
+import evUserCheckoutHistory from "../imports/user-checkout-history.optimized.webp";
+import evChargingComplete from "../imports/charging-complete.optimized.webp";
+import evAdminDashboard from "../imports/admin-dashboard.optimized.webp";
+import evAdminMonitoring from "../imports/admin-monitoring.optimized.webp";
+import evLocationManagement from "../imports/location-management.optimized.webp";
+import saCollectionReports2 from "../imports/collectionReports2.optimized.webp";
+import saCollectionReports5 from "../imports/collectionReports5.optimized.webp";
+import saAccountingDash1 from "../imports/accountingDash1.optimized.webp";
+import saAccountingDash2 from "../imports/accountingDash2.optimized.webp";
+import saCollectorsCalendar from "../imports/collectorsA1.optimized.webp";
+import saFaq from "../imports/faq2.optimized.webp";
+
+const CMSProjectSection = React.lazy(() => import("./CMSSection").then(module => ({ default: module.CMSProjectSection })));
+const CaseStudiesSection = React.lazy(() => import("./CaseStudiesSection").then(module => ({ default: module.CaseStudiesSection })));
+const PDFProjectSection = React.lazy(() => import("./PDFSection").then(module => ({ default: module.PDFProjectSection })));
+const RPAProjectSection = React.lazy(() => import("./RPASection").then(module => ({ default: module.RPAProjectSection })));
+const MarketplaceProjectSection = React.lazy(() => import("./MarketplaceSection").then(module => ({ default: module.MarketplaceProjectSection })));
+const FunFactsSection = React.lazy(() => import("./FunFactsSection").then(module => ({ default: module.FunFactsSection })));
+
+const CMS_INDIGO = "#4338CA";
+const CMS_DARK = "#1E1B4B";
+const PDF_BLUE = "#1D4ED8";
+const PDF_DARK = "#0F172A";
+const PDF_SLATE = "#1E3A5F";
+const RPA_TEAL = "#0891B2";
+const RPA_DARK = "#083344";
+const MKT_BLUE = "#0958D9";
+const MKT_DARK = "#0B1F4D";
 
 // ── MUI Theme ─────────────────────────────────────────────────────────────────
 
@@ -317,70 +329,70 @@ const HONORS = [
 ];
 
 const MEMBERSHIPS = [
-  { 
-    org: "Australian Computer Society (ACS)", 
-    role: "Associate Member", 
-    since: "2025", 
+  {
+    org: "Australian Computer Society (ACS)",
+    role: "Associate Member",
+    since: "2025",
     certImage: membershipCert
   },
 ];
 
 const CERTIFICATIONS = [
-  { 
-    name: "AWS Cloud Practitioner Essentials", 
-    issuer: "Amazon Web Services (AWS)", 
-    completed: "October 2025", 
+  {
+    name: "AWS Cloud Practitioner Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    completed: "October 2025",
     certImage: awsCloudPractitionerCert,
     logo: "AWS",
     logoColor: "#FF9900"
   },
-  { 
-    name: "AWS Technical Essentials", 
-    issuer: "Amazon Web Services (AWS)", 
-    completed: "February 2026", 
+  {
+    name: "AWS Technical Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    completed: "February 2026",
     certImage: awsTechnicalEssentialsCert,
     logo: "AWS",
     logoColor: "#FF9900"
   },
-  { 
-    name: "AWS Solutions Architecture Job Simulation", 
-    issuer: "Forage", 
-    completed: "November 2025", 
+  {
+    name: "AWS Solutions Architecture Job Simulation",
+    issuer: "Forage",
+    completed: "November 2025",
     certImage: awsSolutionsArchitectCert,
     credentialUrl: "https://www.theforage.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_PZdAf9JgjTGC4jArR_1761975910263_completion_certificate.pdf",
     logo: "Forage",
     logoColor: "#FF8C00"
   },
-  { 
-    name: "Study Australia Industry Experience Program", 
-    issuer: "Australian Government", 
-    completed: "January 2025", 
+  {
+    name: "Study Australia Industry Experience Program",
+    issuer: "Australian Government",
+    completed: "January 2025",
     certImage: studyAustraliaCert,
     logo: "AU",
     logoColor: "#006F42"
   },
-  { 
-    name: "Git & GitHub - The Practical Guide", 
-    issuer: "Udemy", 
-    completed: "October 2025", 
+  {
+    name: "Git & GitHub - The Practical Guide",
+    issuer: "Udemy",
+    completed: "October 2025",
     certImage: gitGithubCert,
     credentialUrl: "https://www.udemy.com/certificate/UC-126e7117-57a6-4500-9bce-0be271624fe4/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
     logo: "Udemy",
     logoColor: "#A435F0"
   },
-  { 
-    name: "GitHub Actions - The Complete Guide", 
-    issuer: "Udemy", 
-    completed: "May 2026", 
+  {
+    name: "GitHub Actions - The Complete Guide",
+    issuer: "Udemy",
+    completed: "May 2026",
     certImage: githubActionsCert,
     credentialUrl: "https://www.udemy.com/certificate/UC-11cd1ca2-2dbe-46d5-bdb7-83d86c5fe963/",
     logo: "Udemy",
     logoColor: "#A435F0"
   },
-  { 
-    name: "Docker & Kubernetes: The Practical Guide", 
-    issuer: "Udemy", 
-    completed: "June 2026", 
+  {
+    name: "Docker & Kubernetes: The Practical Guide",
+    issuer: "Udemy",
+    completed: "June 2026",
     certImage: dockerKubernetesCert,
     credentialUrl: "https://www.udemy.com/certificate/UC-500bd48f-8337-475c-a52e-4d1591bea689/",
     logo: "Udemy",
@@ -447,6 +459,25 @@ function SectionHeader({ number, title }: { number: string; title: string }) {
   );
 }
 
+function LazySectionFallback({ minHeight = 360 }: { minHeight?: number }) {
+  return (
+    <div
+      aria-label="Loading section"
+      style={{
+        minHeight,
+        display: "grid",
+        placeItems: "center",
+        color: "#6B7280",
+        background: "#F8F9FA",
+        fontFamily: '"Inter", sans-serif',
+        fontSize: "0.82rem",
+      }}
+    >
+      Loading…
+    </div>
+  );
+}
+
 const CARD: React.CSSProperties = { background: "#fff", border: "1px solid rgba(0,0,0,0.07)", borderRadius: 16, padding: 24 };
 const STRIPE: React.CSSProperties = { background: "#F8F9FA", border: "1px solid rgba(0,0,0,0.05)", borderRadius: 16, padding: 24 };
 
@@ -454,7 +485,7 @@ const STRIPE: React.CSSProperties = { background: "#F8F9FA", border: "1px solid 
 
 function HangingBadge() {
   return (
-    <div style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", animation: "swing 5s ease-in-out infinite", transformOrigin: "top center" }}>
+    <div style={{ display: "inline-flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{
         background: "rgba(255,255,255,0.95)",
         backdropFilter: "blur(12px)",
@@ -502,12 +533,6 @@ function ScrollPhoto({ src, alt, rotate, delay, caption, flip = false, floatDura
       y: 0,
       scale: 1,
       transition: { duration: 1.1, ease: [0.16, 1, 0.3, 1], delay },
-    }).then(() => {
-      // Phase 2: float loop - same feel as the hero profile picture
-      revealControls.start({
-        y: [0, -10, 0],
-        transition: { duration: floatDuration, ease: "easeInOut", repeat: Infinity, repeatType: "loop" },
-      });
     });
     captionControls.start({
       opacity: 1,
@@ -537,7 +562,7 @@ function ScrollPhoto({ src, alt, rotate, delay, caption, flip = false, floatDura
             background: "#F5F5F5",
           }}
         >
-          <img
+          <img loading="lazy" decoding="async"
             src={src}
             alt={alt}
             style={{
@@ -648,9 +673,9 @@ function HeroSection() {
   return (
     <section id="hero" style={{ minHeight: "100vh", background: "#fff", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
       {/* Subtle ambient blobs */}
-      <div style={{ position: "absolute", top: "5%", right: "15%", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(91,77,255,0.05) 0%, transparent 70%)", pointerEvents: "none", animation: "drift1 12s ease-in-out infinite" }} />
-      <div style={{ position: "absolute", bottom: "5%", left: "5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(245,158,11,0.05) 0%, transparent 70%)", pointerEvents: "none", animation: "drift2 15s ease-in-out infinite" }} />
-      <div style={{ position: "absolute", top: "50%", left: "40%", width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 70%)", pointerEvents: "none", animation: "drift3 18s ease-in-out infinite" }} />
+      <div style={{ position: "absolute", top: "5%", right: "15%", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(91,77,255,0.05) 0%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", bottom: "5%", left: "5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(245,158,11,0.05) 0%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: "50%", left: "40%", width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 70%)", pointerEvents: "none" }} />
 
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "96px 40px 72px", width: "100%" }}>
         <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 480px", gap: 56, alignItems: "start" }}>
@@ -737,9 +762,8 @@ function HeroSection() {
               border: "3px solid rgba(91,77,255,0.18)",
               boxShadow: "0 24px 64px rgba(91,77,255,0.14), 0 8px 24px rgba(0,0,0,0.08)",
               background: "#f0f0f0",
-              animation: "float-profile 7s ease-in-out infinite",
             }}>
-              <img
+              <img loading="eager" decoding="async" fetchPriority="high"
                 src={profileImage}
                 alt="Rusira Senath Liyanage"
                 style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
@@ -849,7 +873,7 @@ function TechBadge({ slug, name, color, emoji }: { slug?: string; name: string; 
         onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform = "none"; (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
       >
         {slug ? (
-          <img
+          <img loading="lazy" decoding="async"
             src={`https://cdn.simpleicons.org/${slug}/${color.replace("#", "")}`}
             alt={name}
             style={{ width: 26, height: 26 }}
@@ -911,7 +935,7 @@ function FloatingScreenshot({ src, alt }: { src: string; alt: string }) {
           </div>
         </div>
         {/* Screenshot */}
-        <img src={src} alt={alt} style={{ width: "100%", display: "block" }} />
+        <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block" }} />
       </div>
     </motion.div>
   );
@@ -943,7 +967,7 @@ function MobileFrame({ src, alt, delay = 0 }: { src: string; alt: string; delay?
         <div style={{ position: "absolute", left: -3, top: 120, width: 3, height: 22, background: "#3a3a3c", borderRadius: "2px 0 0 2px" }} />
         {/* Screen */}
         <div style={{ borderRadius: 30, overflow: "hidden", background: "#000", aspectRatio: "9/19.5", position: "relative" }}>
-          <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block" }} />
+          <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block" }} />
         </div>
       </div>
     </motion.div>
@@ -1034,7 +1058,7 @@ function SampleAssistProjectSection() {
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: SA_BLUE, borderRadius: 2 }} />
             <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: SA_BLUE, letterSpacing: "0.2em", textTransform: "uppercase" }}>
-              Featured Project · 02
+              Featured Project · 03
             </span>
           </div>
 
@@ -1054,7 +1078,7 @@ function SampleAssistProjectSection() {
             style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 16 }}
           >
             <div style={{ borderRadius: 8, overflow: "hidden", display: "flex", alignItems: "center", background: "#fff", padding: "4px 8px", border: "1px solid #E5E7EB" }}>
-              <img src={sampleAssistLogo} alt="Sample Assist" style={{ width: 150, objectFit: "contain", display: "block" }} />
+              <img loading="lazy" decoding="async" src={sampleAssistLogo} alt="Sample Assist" style={{ width: 150, objectFit: "contain", display: "block" }} />
             </div>
             <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.95rem", color: "#374151" }}>
               Associated with Sample Assist
@@ -1163,7 +1187,7 @@ function SampleAssistProjectSection() {
                 </div>
                 {/* Screen - clean SA Clinics desktop dashboard */}
                 <div style={{ width: 360, height: 226, overflow: "hidden", borderRadius: "4px 4px 0 0", background: SA_DARK }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={saDesktopScreen}
                     alt="SA Clinics desktop dashboard"
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "0% 0%", display: "block" }}
@@ -1215,7 +1239,7 @@ function SampleAssistProjectSection() {
                 {/* Leader row */}
                 <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20, paddingBottom: 20, borderBottom: `1px solid ${SA_BLUE}15` }}>
                   <div style={{ position: "relative", flexShrink: 0 }}>
-                    <img src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${SA_BLUE}` }} />
+                    <img loading="lazy" decoding="async" src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${SA_BLUE}` }} />
                     <div style={{ position: "absolute", bottom: -2, right: -2, background: SA_BLUE, borderRadius: "50%", width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid #F8FAFF" }}>
                       <span style={{ fontSize: "0.6rem", color: "#fff" }}>★</span>
                     </div>
@@ -1267,7 +1291,7 @@ function SampleAssistProjectSection() {
                 style={{ width: 420, flexShrink: 0 }}
               >
                 <div style={{ borderRadius: 12, overflow: "hidden", boxShadow: "0 12px 40px rgba(0,0,0,0.14)", border: "1px solid rgba(0,0,0,0.07)" }}>
-                  <img src={saTeamSlide} alt="Our Team, Group 14" style={{ width: "100%", display: "block" }} />
+                  <img loading="lazy" decoding="async" src={saTeamSlide} alt="Our Team, Group 14" style={{ width: "100%", display: "block" }} />
                 </div>
               </motion.div>
             </div>
@@ -1312,7 +1336,7 @@ function SampleAssistProjectSection() {
             >
               {/* Logo panel */}
               <div style={{ width: 220, flexShrink: 0, background: "#fff", borderRight: `1px solid ${SA_BLUE}10`, display: "flex", alignItems: "center", justifyContent: "center", padding: "28px 24px" }}>
-                <img src={saClientADS} alt="Advanced Drug Solutions logo"
+                <img loading="lazy" decoding="async" src={saClientADS} alt="Advanced Drug Solutions logo"
                   style={{ width: "100%", maxWidth: 160, objectFit: "contain", display: "block" }} />
               </div>
 
@@ -1363,7 +1387,7 @@ function SampleAssistProjectSection() {
             >
               {/* Logo panel */}
               <div style={{ width: 220, flexShrink: 0, background: "#fff", borderRight: "1px solid rgba(14,90,120,0.08)", display: "flex", alignItems: "center", justifyContent: "center", padding: "28px 24px" }}>
-                <img src={saClientCQR} alt="CQ Rescue Health Services logo"
+                <img loading="lazy" decoding="async" src={saClientCQR} alt="CQ Rescue Health Services logo"
                   style={{ width: "100%", maxWidth: 160, objectFit: "contain", display: "block" }} />
               </div>
 
@@ -1448,7 +1472,7 @@ function SampleAssistProjectSection() {
                       style={{ display: "flex", alignItems: "center", gap: 7, background: `${item.color}14`, border: `1px solid ${item.color}28`, borderRadius: 8, padding: "6px 12px", cursor: "default" }}
                     >
                       {"slug" in item && item.slug
-                        ? <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 14, height: 14, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                        ? <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 14, height: 14, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                         : <span style={{ fontSize: "0.85rem" }}>{(item as { emoji: string }).emoji}</span>
                       }
                       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.73rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" }}>{item.name}</span>
@@ -1680,7 +1704,7 @@ function CoopersProjectSection() {
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: "#5B4DFF", borderRadius: 2 }} />
             <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: "#5B4DFF", letterSpacing: "0.2em", textTransform: "uppercase" }}>
-              Featured Project · 01
+              Featured Project · 02
             </span>
           </div>
           <h3 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(1.15rem, 2vw, 1.5rem)", color: "#0C0C0C", lineHeight: 1.2, marginBottom: 16, letterSpacing: "-0.01em" }}>
@@ -1725,7 +1749,7 @@ function CoopersProjectSection() {
                 </div>
                 {/* Image - fixed height so both look the same size */}
                 <div style={{ height: 280, overflow: "hidden" }}>
-                  <img src={item.src} alt={item.alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: item.pos, display: "block" }} />
+                  <img loading="lazy" decoding="async" src={item.src} alt={item.alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: item.pos, display: "block" }} />
                 </div>
               </div>
             </motion.div>
@@ -1910,7 +1934,7 @@ function CoopersProjectSection() {
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
                       {"slug" in item && item.slug ? (
-                        <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                        <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       ) : (
                         <span style={{ fontSize: "0.9rem" }}>{(item as { emoji: string }).emoji}</span>
                       )}
@@ -2000,7 +2024,7 @@ function CoopersAIFeatures() {
           new-appointment
         </div>
       </div>
-      <img src={src} alt={alt} style={{ width: "100%", display: "block" }} />
+      <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block" }} />
     </motion.div>
   );
 
@@ -2035,7 +2059,7 @@ function CoopersAIFeatures() {
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
               style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(204,120,92,0.08)", border: "1.5px solid rgba(204,120,92,0.3)", borderRadius: 40, padding: "6px 14px 6px 8px", flexShrink: 0 }}
             >
-              <img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic" style={{ width: 18, height: 18 }} />
+              <img loading="lazy" decoding="async" src="https://cdn.simpleicons.org/anthropic" alt="Anthropic" style={{ width: 18, height: 18 }} />
               <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.72rem", fontWeight: 600, color: "#CC785C", whiteSpace: "nowrap" }}>
                 Powered by Claude (Anthropic AI API)
               </span>
@@ -2111,7 +2135,7 @@ function CoopersSchedulingFeatures() {
           appointments
         </div>
       </div>
-      <img src={src} alt={alt} style={{ width: "100%", display: "block" }} />
+      <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block" }} />
     </motion.div>
   );
 
@@ -2221,7 +2245,7 @@ function CoopersAdminDashboard() {
           admin-console
         </div>
       </div>
-      <img src={src} alt={alt} style={{ width: "100%", display: "block" }} />
+      <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block" }} />
     </motion.div>
   );
 
@@ -2333,7 +2357,7 @@ function EVProjectSection() {
           localhost / easyEV
         </div>
       </div>
-      <img src={src} alt={alt} style={{ width: "100%", display: "block" }} />
+      <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block" }} />
     </motion.div>
   );
 
@@ -2346,7 +2370,7 @@ function EVProjectSection() {
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: EV_GREEN, borderRadius: 2 }} />
             <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: EV_GREEN, letterSpacing: "0.2em", textTransform: "uppercase" }}>
-              Featured Project · 03
+              Featured Project · 04
             </span>
           </div>
           <h3 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(1.15rem, 2vw, 1.5rem)", color: "#0C0C0C", lineHeight: 1.2, marginBottom: 16, letterSpacing: "-0.01em" }}>
@@ -2414,7 +2438,7 @@ function EVProjectSection() {
                   </div>
                 </div>
                 <div style={{ height: 320, overflow: "hidden" }}>
-                  <img src={item.src} alt={item.alt} style={{ width: "100%", display: "block", transform: `scale(${item.zoom ?? 1.5})`, transformOrigin: `center ${item.originY ?? "top"}` }} />
+                  <img loading="lazy" decoding="async" src={item.src} alt={item.alt} style={{ width: "100%", display: "block", transform: `scale(${item.zoom ?? 1.5})`, transformOrigin: `center ${item.originY ?? "top"}` }} />
                 </div>
               </div>
             </motion.div>
@@ -2511,7 +2535,7 @@ function EVProjectSection() {
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
                       {"slug" in item && item.slug ? (
-                        <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                        <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       ) : (
                         <span style={{ fontSize: "0.9rem" }}>{(item as { emoji: string }).emoji}</span>
                       )}
@@ -2571,7 +2595,7 @@ function EVUserFeatures() {
         </div>
       </div>
       <div style={{ height: 340, overflow: "hidden", position: "relative" }}>
-        <img src={src} alt={alt} style={{ width: "100%", display: "block", transform: `scale(${zoom})`, transformOrigin: `center ${originY}` }} />
+        <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block", transform: `scale(${zoom})`, transformOrigin: `center ${originY}` }} />
       </div>
     </motion.div>
   );
@@ -2665,7 +2689,7 @@ function EVAdminFeatures() {
         </div>
       </div>
       <div style={{ height: 340, overflow: "hidden", position: "relative" }}>
-        <img src={src} alt={alt} style={{ width: "100%", display: "block", transform: `scale(${zoom})`, transformOrigin: `center ${originY}` }} />
+        <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block", transform: `scale(${zoom})`, transformOrigin: `center ${originY}` }} />
       </div>
     </motion.div>
   );
@@ -2985,7 +3009,7 @@ function FuelProjectSection() {
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: FUEL_ORANGE, borderRadius: 2 }} />
             <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: FUEL_ORANGE, letterSpacing: "0.2em", textTransform: "uppercase" }}>
-              Featured Project · 04
+              Featured Project · 05
             </span>
           </div>
           <h3 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(1.15rem, 2vw, 1.5rem)", color: "#0C0C0C", lineHeight: 1.2, marginBottom: 16, letterSpacing: "-0.01em" }}>
@@ -3116,7 +3140,7 @@ function FuelProjectSection() {
                       onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 16px ${item.color}40`; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
-                      <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                      <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#", "")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.75rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" }}>{item.name}</span>
                     </motion.div>
                   ))}
@@ -3190,7 +3214,7 @@ function FuelTeamSection() {
           {/* Leader row - Rusira */}
           <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20, paddingBottom: 20, borderBottom: `1px solid ${FUEL_ORANGE}20` }}>
             <div style={{ position: "relative", flexShrink: 0 }}>
-              <img src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${FUEL_ORANGE}` }} />
+              <img loading="lazy" decoding="async" src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${FUEL_ORANGE}` }} />
               <div style={{ position: "absolute", bottom: -2, right: -2, background: FUEL_ORANGE, borderRadius: "50%", width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid #FFF7ED" }}>
                 <span style={{ fontSize: "0.6rem", color: "#fff" }}>★</span>
               </div>
@@ -3212,7 +3236,7 @@ function FuelTeamSection() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 style={{ display: "flex", alignItems: "center", gap: 10, background: "#fff", borderRadius: 10, padding: "12px 16px", border: `1px solid ${FUEL_ORANGE}18`, flex: "1 1 220px" }}
               >
-                <img src={m.photo} alt={m.name} style={{ width: 64, height: 64, borderRadius: "50%", objectFit: "cover", border: `2.5px solid ${FUEL_ORANGE}50`, flexShrink: 0 }} />
+                <img loading="lazy" decoding="async" src={m.photo} alt={m.name} style={{ width: 64, height: 64, borderRadius: "50%", objectFit: "cover", border: `2.5px solid ${FUEL_ORANGE}50`, flexShrink: 0 }} />
                 <div>
                   <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 600, fontSize: "0.78rem", color: "#0C0C0C", lineHeight: 1.2 }}>{m.name}</div>
                   <div style={{ fontSize: "0.68rem", color: "#6B7280", marginTop: 2 }}>{m.role}</div>
@@ -3362,6 +3386,7 @@ function ProjectsSection() {
   const [openCMSModal, setOpenCMSModal] = useState(false);
   const [openPDFModal, setOpenPDFModal] = useState(false);
   const [openRPAModal, setOpenRPAModal] = useState(false);
+  const [openMarketplaceModal, setOpenMarketplaceModal] = useState(false);
 
   return (
     <section id="projects" style={{ background: "#fff", padding: "88px 0 0" }}>
@@ -3371,6 +3396,61 @@ function ProjectsSection() {
 
       {/* ── Featured Projects Grid ────────────────────────────────── */}
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "0 20px 48px" }}>
+
+        {/* SA Marketplace - lead project */}
+        <FadeUp className="marketplace-project-card">
+            <motion.div
+              whileHover={{ y: -5, boxShadow: `0 18px 44px ${MKT_BLUE}30` }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              onClick={() => setOpenMarketplaceModal(true)}
+              style={{ background: `linear-gradient(135deg, ${MKT_DARK} 0%, #12408F 50%, ${MKT_BLUE} 100%)`, borderRadius: 16, padding: "22px 26px", cursor: "pointer", position: "relative", overflow: "hidden", boxShadow: `0 8px 28px ${MKT_BLUE}25`, height: "100%" }}
+            >
+              <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 100% 40%, rgba(255,255,255,0.13) 0%, transparent 52%)", pointerEvents: "none" }} />
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 5, marginBottom: 9, flexWrap: "wrap" }}>
+                  <Chip label="Featured Project" size="small" sx={{ background: "rgba(255,255,255,0.15)", color: "#fff", border: "1px solid rgba(255,255,255,0.25)", fontWeight: 700, fontSize: "0.63rem" }} />
+                  <Chip label="Phase 1 Complete" size="small" sx={{ background: "rgba(16,185,129,0.2)", color: "#A7F3D0", border: "1px solid rgba(16,185,129,0.4)", fontSize: "0.63rem" }} />
+                  <Chip label="Full-Stack Developer" size="small" sx={{ background: "rgba(251,191,36,0.2)", color: "#FDE68A", border: "1px solid rgba(251,191,36,0.3)", fontSize: "0.63rem" }} />
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 9, flexWrap: "wrap" }}>
+                  <div style={{ background: "#fff", borderRadius: 6, padding: "3px 8px", display: "flex", alignItems: "center" }}>
+                    <img loading="lazy" decoding="async" src={innomenteLogoImg} alt="Innomente" style={{ height: 20, maxWidth: 90, objectFit: "contain" }} />
+                  </div>
+                  <span style={{ color: "rgba(255,255,255,0.68)", fontSize: "0.63rem", fontWeight: 600 }}>Associated with Innomente Pty Ltd · sister company of Sample Assist</span>
+                </div>
+                <h2 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(1rem, 1.5vw, 1.25rem)", color: "#fff", margin: "0 0 9px", letterSpacing: "-0.02em" }}>
+                  SA Marketplace - Workplace Testing Consumables
+                </h2>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginBottom: 9 }}>
+                  {[
+                    { name: "NestJS", slug: "nestjs", color: "E0234E" },
+                    { name: "React", slug: "react", color: "61DAFB" },
+                    { name: "Vite", slug: "vite", color: "646CFF" },
+                    { name: "PostgreSQL", slug: "postgresql", color: "4169E1" },
+                    { name: "TypeScript", slug: "typescript", color: "3178C6" },
+                    { name: "Docker", slug: "docker", color: "2496ED" },
+                    { name: "Turborepo", slug: "turborepo", color: "EF4444" },
+                  ].map(tech => (
+                    <Chip key={tech.name} size="small"
+                      icon={<img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${tech.slug}/${tech.color}`} alt="" style={{ width: 12, height: 12 }} />}
+                      label={tech.name}
+                      sx={{ background: "rgba(255,255,255,0.12)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)", fontSize: "0.62rem", "& .MuiChip-icon": { marginLeft: "5px" } }}
+                    />
+                  ))}
+                </div>
+                <p style={{ color: "rgba(255,255,255,0.72)", fontSize: "0.78rem", lineHeight: 1.5, margin: "0 0 12px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                  One shared NestJS backend and three Vite + React apps for buyers, suppliers and staff, with split multi-vendor orders, frozen-price tax invoices and verified suppliers.
+                </p>
+                <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
+                  {["3 APIs", "42 screens", "1,600+ tests"].map(stat => <span key={stat} style={{ border: "1px solid rgba(255,255,255,0.22)", borderRadius: 99, padding: "4px 9px", color: "rgba(255,255,255,0.82)", fontSize: "0.64rem", fontWeight: 700 }}>{stat}</span>)}
+                </div>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", background: "rgba(255,255,255,0.08)" }}>
+                  <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
+                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}><ArrowRight size={14} color="#fff" /></motion.div>
+                </div>
+              </div>
+            </motion.div>
+          </FadeUp>
 
         {/* Cooper's - hero card, full width */}
         <FadeUp>
@@ -3396,7 +3476,7 @@ function ProjectsSection() {
               </div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 6, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 14px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                 <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.82rem", color: "#fff", letterSpacing: "0.02em" }}>View Full Project Details</span>
-                <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                   <ArrowRight size={16} color="#fff" />
                 </motion.div>
               </div>
@@ -3424,7 +3504,7 @@ function ProjectsSection() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 7 }}>
                   <div style={{ borderRadius: 4, overflow: "hidden", display: "flex", alignItems: "center" }}>
-                    <img src={sampleAssistLogo} alt="Sample Assist" style={{ height: 16, objectFit: "contain", display: "block" }} />
+                    <img loading="lazy" decoding="async" src={sampleAssistLogo} alt="Sample Assist" style={{ height: 16, objectFit: "contain", display: "block" }} />
                   </div>
                   <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 600, fontSize: "0.63rem", color: "rgba(255,255,255,0.7)", whiteSpace: "nowrap" }}>Associated with Sample Assist</span>
                 </div>
@@ -3438,7 +3518,7 @@ function ProjectsSection() {
                 </div>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                   <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                     <ArrowRight size={14} color="#fff" />
                   </motion.div>
                 </div>
@@ -3477,7 +3557,7 @@ function ProjectsSection() {
                 <div style={{ marginTop: "auto", paddingTop: 12 }}>
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                     <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                       <ArrowRight size={14} color="#fff" />
                     </motion.div>
                   </div>
@@ -3517,7 +3597,7 @@ function ProjectsSection() {
                 <div style={{ marginTop: "auto", paddingTop: 12 }}>
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                     <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                       <ArrowRight size={14} color="#fff" />
                     </motion.div>
                   </div>
@@ -3552,7 +3632,7 @@ function ProjectsSection() {
                     { slug: "mongodb",   name: "MongoDB",    color: "#47A248" },
                   ].map(t => (
                     <Chip key={t.name} size="small"
-                      icon={<img src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
+                      icon={<img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
                       label={t.name}
                       sx={{ background: "rgba(255,255,255,0.12)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)", fontSize: "0.62rem", "& .MuiChip-icon": { marginLeft: "5px" } }}
                     />
@@ -3563,7 +3643,7 @@ function ProjectsSection() {
                 </p>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                   <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                     <ArrowRight size={14} color="#fff" />
                   </motion.div>
                 </div>
@@ -3599,7 +3679,7 @@ function ProjectsSection() {
                     { slug: "html5",     name: "HTML/CSS",  color: "#E34F26" },
                   ].map(t => (
                     <Chip key={t.name} size="small"
-                      icon={<img src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
+                      icon={<img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
                       label={t.name}
                       sx={{ background: "rgba(255,255,255,0.12)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)", fontSize: "0.62rem", "& .MuiChip-icon": { marginLeft: "5px" } }}
                     />
@@ -3611,7 +3691,7 @@ function ProjectsSection() {
                 <div style={{ marginTop: "auto", paddingTop: 12 }}>
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                     <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                       <ArrowRight size={14} color="#fff" />
                     </motion.div>
                   </div>
@@ -3640,7 +3720,7 @@ function ProjectsSection() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
                   <div style={{ background: "#fff", borderRadius: 6, padding: "2px 8px", border: "1px solid rgba(255,255,255,0.2)", display: "flex", alignItems: "center" }}>
-                    <img src={metatechnoLogo} alt="MetaTechno Lanka" style={{ height: 26, objectFit: "contain", display: "block" }} />
+                    <img loading="lazy" decoding="async" src={metatechnoLogo} alt="MetaTechno Lanka" style={{ height: 26, objectFit: "contain", display: "block" }} />
                   </div>
                 </div>
                 <h2 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(0.95rem, 1.2vw, 1.1rem)", color: "#fff", margin: "0 0 8px", letterSpacing: "-0.02em" }}>
@@ -3654,7 +3734,7 @@ function ProjectsSection() {
                     { name: "Redmine",  color: "#B22222", slug: "redmine" },
                   ].map(t => (
                     <Chip key={t.name} size="small"
-                      icon={<img src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
+                      icon={<img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace("#","")}`} alt={t.name} style={{ width: 12, height: 12 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />}
                       label={t.name}
                       sx={{ background: "rgba(255,255,255,0.12)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)", fontSize: "0.62rem", "& .MuiChip-icon": { marginLeft: "5px" } }}
                     />
@@ -3665,7 +3745,7 @@ function ProjectsSection() {
                 </p>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 5, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "7px 13px", backdropFilter: "blur(8px)", background: "rgba(255,255,255,0.08)" }}>
                   <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.78rem", color: "#fff" }}>View Full Project Details</span>
-                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                  <motion.div animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: 1, ease: "easeInOut" }}>
                     <ArrowRight size={14} color="#fff" />
                   </motion.div>
                 </div>
@@ -3673,12 +3753,13 @@ function ProjectsSection() {
             </motion.div>
           </FadeUp>
 
+
         </div>{/* end 2-column grid */}
       </div>{/* end Featured Projects wrapper */}
 
       {/* ── All Modals ─────────────────────────────────────────────── */}
       <Dialog open={openCoopersModal} onClose={() => setOpenCoopersModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenCoopersModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
@@ -3689,7 +3770,7 @@ function ProjectsSection() {
       </Dialog>
 
       <Dialog open={openSAModal} onClose={() => setOpenSAModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenSAModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
@@ -3700,7 +3781,7 @@ function ProjectsSection() {
       </Dialog>
 
       <Dialog open={openEVModal} onClose={() => setOpenEVModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenEVModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
@@ -3711,7 +3792,7 @@ function ProjectsSection() {
       </Dialog>
 
       <Dialog open={openFuelModal} onClose={() => setOpenFuelModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenFuelModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
@@ -3722,35 +3803,54 @@ function ProjectsSection() {
       </Dialog>
 
       <Dialog open={openCMSModal} onClose={() => setOpenCMSModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenCMSModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", height: "95vh" }}><CMSProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}>
+            <React.Suspense fallback={<LazySectionFallback minHeight={600} />}><CMSProjectSection /></React.Suspense>
+          </div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openPDFModal} onClose={() => setOpenPDFModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenPDFModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", height: "95vh" }}><PDFProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}>
+            <React.Suspense fallback={<LazySectionFallback minHeight={600} />}><PDFProjectSection /></React.Suspense>
+          </div>
         </DialogContent>
       </Dialog>
 
       <Dialog open={openRPAModal} onClose={() => setOpenRPAModal(false)} maxWidth={false}
-        PaperProps={{ sx: { maxWidth: "96vw", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
         <DialogContent sx={{ padding: 0, position: "relative" }}>
           <IconButton onClick={() => setOpenRPAModal(false)}
             sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
             <CloseIcon />
           </IconButton>
-          <div style={{ overflowY: "auto", height: "95vh" }}><RPAProjectSection /></div>
+          <div style={{ overflowY: "auto", height: "95vh" }}>
+            <React.Suspense fallback={<LazySectionFallback minHeight={600} />}><RPAProjectSection /></React.Suspense>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={openMarketplaceModal} onClose={() => setOpenMarketplaceModal(false)} maxWidth={false}
+        PaperProps={{ sx: { width: "96vw", maxWidth: "96vw", height: "95vh", maxHeight: "95vh", borderRadius: 4, background: "#fff" } }}>
+        <DialogContent sx={{ padding: 0, position: "relative" }}>
+          <IconButton aria-label="Close SA Marketplace project" onClick={() => setOpenMarketplaceModal(false)}
+            sx={{ position: "fixed", top: 20, right: 20, zIndex: 1000, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(10px)", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", "&:hover": { background: "#fff", transform: "scale(1.05)" } }}>
+            <CloseIcon />
+          </IconButton>
+          <div style={{ overflowY: "auto", height: "95vh" }}>
+            <React.Suspense fallback={<LazySectionFallback minHeight={600} />}><MarketplaceProjectSection /></React.Suspense>
+          </div>
         </DialogContent>
       </Dialog>
 
@@ -3869,7 +3969,7 @@ function PublicationsSection() {
                       background: member.highlight === "me" ? `${PUB_PURPLE}08` : member.highlight === "supervisor" ? "rgba(245,158,11,0.06)" : member.highlight === "leader" ? "rgba(16,185,129,0.06)" : "#F9FAFB",
                       border: member.highlight === "me" ? `1px solid ${PUB_PURPLE}20` : member.highlight === "supervisor" ? "1px solid rgba(245,158,11,0.2)" : member.highlight === "leader" ? "1px solid rgba(16,185,129,0.2)" : "1px solid rgba(0,0,0,0.06)",
                       borderRadius: 12, padding: "10px 14px" }}>
-                      <img src={member.photo} alt={member.name} style={{ width: 44, height: 44, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: member.highlight === "me" ? `2px solid ${PUB_PURPLE}` : member.highlight === "supervisor" ? "2px solid #F59E0B" : member.highlight === "leader" ? "2px solid #10B981" : "2px solid rgba(0,0,0,0.08)" }} />
+                      <img loading="lazy" decoding="async" src={member.photo} alt={member.name} style={{ width: 44, height: 44, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: member.highlight === "me" ? `2px solid ${PUB_PURPLE}` : member.highlight === "supervisor" ? "2px solid #F59E0B" : member.highlight === "leader" ? "2px solid #10B981" : "2px solid rgba(0,0,0,0.08)" }} />
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.82rem", color: "#0C0C0C", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{member.name}</div>
                         <div style={{ fontSize: "0.7rem", color: member.highlight === "me" ? PUB_PURPLE : member.highlight === "supervisor" ? "#B45309" : member.highlight === "leader" ? "#047857" : "#6B7280", fontWeight: 500, marginTop: 1 }}>{member.role}</div>
@@ -3959,7 +4059,7 @@ function ExperienceSection() {
                         <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
                           {logoMeta && (
                             <div style={{ background: logoMeta.bg, borderRadius: logoMeta.radius, padding: "5px 10px", border: "1px solid rgba(0,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", height: logoMeta.imgH + 12 }}>
-                              <img src={logoMeta.src} alt={e.company} style={{ height: logoMeta.imgH, maxWidth: logoMeta.maxW, objectFit: "contain", display: "block" }} />
+                              <img loading="lazy" decoding="async" src={logoMeta.src} alt={e.company} style={{ height: logoMeta.imgH, maxWidth: logoMeta.maxW, objectFit: "contain", display: "block" }} />
                             </div>
                           )}
                           <div style={{ background: e.color, color: "#fff", fontSize: "0.72rem", fontWeight: 600, padding: "3px 10px", borderRadius: 6, whiteSpace: "nowrap" }}>{e.period}</div>
@@ -4007,9 +4107,9 @@ function EducationSection() {
               <div style={{ ...STRIPE, display: "flex", gap: 18, alignItems: "center" }}>
                 <div style={{ width: 56, height: 56, borderRadius: 12, background: "#fff", border: "1px solid rgba(0,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, padding: 6, boxShadow: "0 2px 8px rgba(0,0,0,0.06)", overflow: "hidden" }}>
                   {logo
-                    ? <img src={logo} alt={e.institution} style={{ 
-                        width: "100%", 
-                        height: "100%", 
+                    ? <img loading="lazy" decoding="async" src={logo} alt={e.institution} style={{
+                        width: "100%",
+                        height: "100%",
                         objectFit: (e.institution === "University of Wollongong" || e.institution === "Performance Education") ? "cover" : "contain",
                         objectPosition: (e.institution === "University of Wollongong" || e.institution === "Performance Education") ? "center center" : "center",
                         transform: (e.institution === "University of Wollongong" || e.institution === "Performance Education") ? "scale(1.8)" : "none"
@@ -4072,7 +4172,7 @@ function BlogSection() {
               >
                 {/* Thumbnail */}
                 <div style={{ width: "100%", height: 180, overflow: "hidden", background: "#F3F4F6", flexShrink: 0 }}>
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={p.thumbnail}
                     alt={p.title}
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block" }}
@@ -4125,7 +4225,7 @@ function HonorsSection() {
               style={{ background: "#fff", borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", border: "1px solid rgba(0,0,0,0.08)", display: "flex", flexDirection: "column", height: "100%" }}
             >
               <div style={{ position: "relative", height: 340, overflow: "hidden", background: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)", flexShrink: 0 }}>
-                <img src={sampleAssistCert} alt="Sample Assist Intern of the Year Certificate" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block", transform: "scale(1.02)" }} />
+                <img loading="lazy" decoding="async" src={sampleAssistCert} alt="Sample Assist Intern of the Year Certificate" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block", transform: "scale(1.02)" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.35) 100%)" }} />
                 <div style={{ position: "absolute", top: 16, left: 16, background: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", color: "#fff", borderRadius: 8, padding: "5px 14px", fontSize: "0.72rem", fontWeight: 800, boxShadow: "0 4px 12px rgba(245,158,11,0.4)", display: "flex", alignItems: "center", gap: 6 }}>
                   <EmojiEventsIcon sx={{ fontSize: 16 }} />
@@ -4148,7 +4248,7 @@ function HonorsSection() {
               style={{ background: "#fff", borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", border: "1px solid rgba(0,0,0,0.08)", display: "flex", flexDirection: "column", height: "100%" }}
             >
               <div style={{ position: "relative", height: 340, overflow: "hidden", background: "linear-gradient(135deg, #5B21B6 0%, #4C1D95 100%)", flexShrink: 0 }}>
-                <img src={ifsWinnerCard} alt="IFS Discovery Winner" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
+                <img loading="lazy" decoding="async" src={ifsWinnerCard} alt="IFS Discovery Winner" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.4) 100%)" }} />
                 <div style={{ position: "absolute", top: 16, left: 16, background: "linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%)", color: "#fff", borderRadius: 8, padding: "5px 14px", fontSize: "0.72rem", fontWeight: 800, boxShadow: "0 4px 12px rgba(124,58,237,0.5)", display: "flex", alignItems: "center", gap: 6 }}>
                   <span style={{ fontSize: "1rem" }}>🥇</span>
@@ -4176,7 +4276,7 @@ function HonorsSection() {
               style={{ background: "#fff", borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", border: "1px solid rgba(0,0,0,0.08)", display: "flex", flexDirection: "column", height: "100%" }}
             >
               <div style={{ position: "relative", height: 320, overflow: "hidden", background: "linear-gradient(135deg, #064E3B 0%, #022C22 100%)", flexShrink: 0 }}>
-                <img src={treasureHuntCert} alt="Treasure Hunt Certificate of Achievement" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
+                <img loading="lazy" decoding="async" src={treasureHuntCert} alt="Treasure Hunt Certificate of Achievement" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.35) 100%)" }} />
                 <div style={{ position: "absolute", top: 16, left: 16, background: "linear-gradient(135deg, #059669 0%, #047857 100%)", color: "#fff", borderRadius: 8, padding: "5px 14px", fontSize: "0.7rem", fontWeight: 800, boxShadow: "0 4px 12px rgba(5,150,105,0.4)", display: "flex", alignItems: "center", gap: 6 }}>
                   <EmojiEventsIcon sx={{ fontSize: 14 }} />
@@ -4199,7 +4299,7 @@ function HonorsSection() {
               style={{ background: "#fff", borderRadius: 24, overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.12)", border: "1px solid rgba(0,0,0,0.08)", display: "flex", flexDirection: "column", height: "100%" }}
             >
               <div style={{ position: "relative", height: 320, overflow: "hidden", background: "linear-gradient(135deg, #F5F0E8 0%, #E5DDD0 100%)", flexShrink: 0 }}>
-                <img src={meritAwardCert} alt="SLIIT Merit Award Certificate" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
+                <img loading="lazy" decoding="async" src={meritAwardCert} alt="SLIIT Merit Award Certificate" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.02)" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3) 100%)" }} />
                 <div style={{ position: "absolute", top: 16, left: 16, background: "linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)", color: "#fff", borderRadius: 8, padding: "5px 14px", fontSize: "0.7rem", fontWeight: 800, boxShadow: "0 4px 12px rgba(37,99,235,0.4)", display: "flex", alignItems: "center", gap: 6 }}>
                   <span style={{ fontSize: "0.95rem" }}>🥈</span>
@@ -4221,37 +4321,37 @@ function HonorsSection() {
           <motion.div
             whileHover={{ y: -8, scale: 1.008 }}
             transition={{ duration: 0.35 }}
-            style={{ 
-              background: "linear-gradient(135deg, #FFF9F5 0%, #FFFCFA 100%)", 
-              borderRadius: 28, 
-              overflow: "hidden", 
-              boxShadow: "0 16px 48px rgba(181, 83, 9, 0.22), 0 4px 16px rgba(0,0,0,0.08)", 
-              border: "2px solid rgba(181, 83, 9, 0.15)", 
+            style={{
+              background: "linear-gradient(135deg, #FFF9F5 0%, #FFFCFA 100%)",
+              borderRadius: 28,
+              overflow: "hidden",
+              boxShadow: "0 16px 48px rgba(181, 83, 9, 0.22), 0 4px 16px rgba(0,0,0,0.08)",
+              border: "2px solid rgba(181, 83, 9, 0.15)",
               display: "flex",
               position: "relative"
             }}
           >
             {/* Decorative accent stripe */}
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, #B45309 0%, #D97706 50%, #B45309 100%)" }} />
-            
+
             <div style={{ width: 200, flexShrink: 0, background: "linear-gradient(160deg, #7B1E1E 0%, #5C1212 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 28px", position: "relative", overflow: "hidden" }}>
               {/* Enhanced decorative background pattern */}
               <div style={{ position: "absolute", inset: 0, opacity: 0.12, backgroundImage: "radial-gradient(circle at 20% 50%, transparent 0%, rgba(255,255,255,0.4) 100%)" }} />
               <div style={{ position: "absolute", width: 300, height: 300, background: "radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)", top: -100, left: -100 }} />
-              <img src={anandaCrest} alt="Ananda College Crest" style={{ width: 130, height: 130, objectFit: "contain", position: "relative", zIndex: 1, filter: "drop-shadow(0 6px 16px rgba(0,0,0,0.3))" }} />
+              <img loading="lazy" decoding="async" src={anandaCrest} alt="Ananda College Crest" style={{ width: 130, height: 130, objectFit: "contain", position: "relative", zIndex: 1, filter: "drop-shadow(0 6px 16px rgba(0,0,0,0.3))" }} />
             </div>
-            
+
             <div style={{ padding: "36px 40px", display: "flex", flexDirection: "column", justifyContent: "center", flex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
                 <SchoolIcon sx={{ fontSize: 18, color: "#B45309" }} />
                 <div style={{ fontSize: "0.72rem", color: "#B45309", fontWeight: 800, textTransform: "uppercase" as const, letterSpacing: "0.14em" }}>Ananda College Annual Prize Giving · 2017</div>
               </div>
-              <h3 style={{ 
-                fontFamily: '"Plus Jakarta Sans", sans-serif', 
-                fontWeight: 800, 
-                fontSize: "1.45rem", 
-                color: "#0C0C0C", 
-                margin: "0 0 14px", 
+              <h3 style={{
+                fontFamily: '"Plus Jakarta Sans", sans-serif',
+                fontWeight: 800,
+                fontSize: "1.45rem",
+                color: "#0C0C0C",
+                margin: "0 0 14px",
                 lineHeight: 1.25,
                 background: "linear-gradient(135deg, #B45309 0%, #D97706 100%)",
                 WebkitBackgroundClip: "text",
@@ -4293,8 +4393,8 @@ function MembershipsSection() {
                     <span style={{ fontSize: "0.78rem", color: "#A1A1AA" }}>· since {m.since}</span>
                   </div>
                   <div style={{ ...CARD, padding: 0, overflow: "hidden", maxWidth: 400 }}>
-                    <img 
-                      src={m.certImage} 
+                    <img loading="lazy" decoding="async"
+                      src={m.certImage}
                       alt={`${m.org} Membership Certificate`}
                       style={{ width: "100%", display: "block" }}
                     />
@@ -4341,27 +4441,27 @@ function CertificationsSection() {
                   </div>
                 </div>
                 <div style={{ padding: 0, overflow: "hidden", borderRadius: 8, border: "1px solid rgba(0,0,0,0.06)" }}>
-                  <img 
-                    src={c.certImage} 
+                  <img loading="lazy" decoding="async"
+                    src={c.certImage}
                     alt={`${c.name} Certificate`}
                     style={{ width: "100%", display: "block" }}
                   />
                 </div>
                 {c.credentialUrl && (
-                  <a 
-                    href={c.credentialUrl} 
-                    target="_blank" 
+                  <a
+                    href={c.credentialUrl}
+                    target="_blank"
                     rel="noopener noreferrer"
-                    style={{ 
-                      display: "inline-flex", 
-                      alignItems: "center", 
-                      gap: 6, 
-                      padding: "8px 16px", 
-                      background: "#5B4DFF", 
-                      color: "#fff", 
-                      borderRadius: 6, 
-                      fontSize: "0.8rem", 
-                      fontWeight: 600, 
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      padding: "8px 16px",
+                      background: "#5B4DFF",
+                      color: "#fff",
+                      borderRadius: 6,
+                      fontSize: "0.8rem",
+                      fontWeight: 600,
                       textDecoration: "none",
                       fontFamily: '"Plus Jakarta Sans", sans-serif',
                       transition: "background 0.2s ease",
@@ -4391,18 +4491,18 @@ function CertificationsSection() {
 // ── Audio Player Component ────────────────────────────────────────────────────
 // Component for playing music demo tracks
 
-function AudioPlayer({ 
-  title, 
-  artist, 
-  audioSrc, 
-  color, 
+function AudioPlayer({
+  title,
+  artist,
+  audioSrc,
+  color,
   gradient,
-  delay = 0 
-}: { 
-  title: string; 
-  artist: string; 
-  audioSrc: string; 
-  color: string; 
+  delay = 0
+}: {
+  title: string;
+  artist: string;
+  audioSrc: string;
+  color: string;
   gradient: string;
   delay?: number;
 }) {
@@ -4518,7 +4618,7 @@ function AudioPlayer({
       </div>
 
       {/* Progress Bar */}
-      <div 
+      <div
         onClick={handleSeek}
         style={{
           width: "100%",
@@ -4669,8 +4769,8 @@ function AudioPlayer({
 
 function ContactSection() {
   return (
-    <section id="contact" style={{ 
-      padding: "70px 0 80px", 
+    <section id="contact" style={{
+      padding: "70px 0 80px",
       background: "linear-gradient(135deg, #5D4037 0%, #3E2723 100%)",
       position: "relative",
       overflow: "hidden"
@@ -4759,9 +4859,9 @@ function ContactSection() {
             margin: "0 auto",
             textShadow: "0 1px 3px rgba(0,0,0,0.2)"
           }}>
-            Open to new opportunities across Australia: on-site, hybrid, or fully remote. 
+            Open to new opportunities across Australia: on-site, hybrid, or fully remote.
             <br />
-            Contract projects, full-time roles, or collaborations in mobile development, 
+            Contract projects, full-time roles, or collaborations in mobile development,
             full-stack engineering, or SaaS products.
           </p>
         </motion.div>
@@ -4786,7 +4886,7 @@ function ContactSection() {
             }}>
               Get in Touch
             </h3>
-            
+
             <p style={{
               fontFamily: '"Inter", sans-serif',
               fontSize: "0.9rem",
@@ -4806,31 +4906,31 @@ function ContactSection() {
               marginBottom: 36
             }}>
               {[
-                { 
-                  icon: <EmailIcon sx={{ fontSize: 22 }} />, 
-                  label: "Email", 
-                  text: "rusira.senath@gmail.com", 
+                {
+                  icon: <EmailIcon sx={{ fontSize: 22 }} />,
+                  label: "Email",
+                  text: "rusira.senath@gmail.com",
                   href: "mailto:rusira.senath@gmail.com",
                   color: "#EA4335"
                 },
-                { 
-                  icon: <PhoneIcon sx={{ fontSize: 22 }} />, 
-                  label: "Mobile", 
-                  text: "0418 549 596", 
+                {
+                  icon: <PhoneIcon sx={{ fontSize: 22 }} />,
+                  label: "Mobile",
+                  text: "0418 549 596",
                   href: "tel:+61418549596",
                   color: "#34A853"
                 },
-                { 
-                  icon: <LinkedInIcon sx={{ fontSize: 22 }} />, 
-                  label: "LinkedIn", 
-                  text: "rusira-senath-liyanage", 
+                {
+                  icon: <LinkedInIcon sx={{ fontSize: 22 }} />,
+                  label: "LinkedIn",
+                  text: "rusira-senath-liyanage",
                   href: "https://linkedin.com/in/rusira-senath-liyanage",
                   color: "#0A66C2"
                 },
-                { 
-                  icon: <GitHubIcon sx={{ fontSize: 22 }} />, 
-                  label: "GitHub", 
-                  text: "RusiraLiyanage", 
+                {
+                  icon: <GitHubIcon sx={{ fontSize: 22 }} />,
+                  label: "GitHub",
+                  text: "RusiraLiyanage",
                   href: "https://github.com/RusiraLiyanage",
                   color: "#181717"
                 },
@@ -4923,21 +5023,21 @@ function ContactSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               style={{ textAlign: "center" }}
             >
-              <Button 
-                variant="contained" 
+              <Button
+                variant="contained"
                 size="large"
-                startIcon={<Download size={20} />} 
+                startIcon={<Download size={20} />}
                 href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                sx={{ 
+                sx={{
                   py: 1.5,
                   px: 3.5,
                   fontSize: "0.9rem",
                   fontWeight: 700,
                   background: "linear-gradient(135deg, #3D2817 0%, #2D1B0E 100%)",
                   boxShadow: "0 8px 24px rgba(61, 40, 23, 0.4)",
-                  "&:hover": { 
+                  "&:hover": {
                     background: "linear-gradient(135deg, #2D1B0E 0%, #1F120A 100%)",
                     transform: "translateY(-2px)",
                     boxShadow: "0 12px 32px rgba(61, 40, 23, 0.5)"
@@ -4996,12 +5096,12 @@ function ScrollArrow() {
 
 export default function App(props?: any) {
   const active = useScrollSpy();
-  
+
   // Filter out Figma-specific props to avoid warnings
   const cleanProps = props ? Object.fromEntries(
     Object.entries(props).filter(([key]) => !key.startsWith('data-fg'))
   ) : {};
-  
+
   return (
     <ThemeProvider theme={muiTheme}>
       <style>{`
@@ -5041,19 +5141,28 @@ export default function App(props?: any) {
         ::-webkit-scrollbar-thumb { background: rgba(91,77,255,0.25); border-radius: 2px; }
         ::-webkit-scrollbar-thumb:hover { background: rgba(91,77,255,0.5); }
         * { box-sizing: border-box; }
-        
+        .marketplace-project-card { grid-column: 1 / -1; margin-bottom: 14px; }
+        @media (prefers-reduced-motion: reduce) {
+          *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            scroll-behavior: auto !important;
+            transition-duration: 0.01ms !important;
+          }
+        }
+
         /* Mobile Portrait Responsive Styles */
         @media (max-width: 767px) {
           .hidden.md\\:block { display: none !important; }
           .hidden.md\\:grid { display: none !important; }
           .hidden.md\\:flex { display: none !important; }
-          
+
           .hero-grid {
             grid-template-columns: 1fr !important;
             gap: 32px !important;
             padding: 80px 20px 40px !important;
           }
-          
+
           .hero-profile-container {
             display: block !important;
             order: -1 !important;
@@ -5061,77 +5170,77 @@ export default function App(props?: any) {
             margin: 0 auto !important;
             padding: 0 !important;
           }
-          
+
           .hero-profile-container > div {
             width: 100% !important;
           }
-          
+
           section {
             padding: 48px 0 !important;
           }
-          
+
           .section-container {
             padding: 0 16px !important;
           }
-          
+
           .content-cards {
             margin: 0 8px !important;
           }
-          
+
           .projects-grid {
             grid-template-columns: 1fr !important;
           }
-          
+
           .about-grid {
             grid-template-columns: 1fr !important;
             gap: 24px !important;
           }
-          
+
           .tech-grid {
             grid-template-columns: 1fr !important;
           }
-          
+
           .contact-grid {
             grid-template-columns: 1fr !important;
             gap: 16px !important;
           }
-          
+
           .MuiDialog-paper {
             margin: 16px !important;
             max-width: calc(100% - 32px) !important;
           }
-          
+
           /* Honors & Awards grid */
           section#honors div[style*="grid-template-columns"] {
             grid-template-columns: 1fr !important;
           }
-          
+
           /* Any 2-column grids in sections */
           section div[style*='gridTemplateColumns: "1fr 1fr"'],
           section div[style*="gridTemplateColumns: '1fr 1fr'"] {
             grid-template-columns: 1fr !important;
             gap: 24px !important;
           }
-          
+
           /* Adjust modal/feature sections */
           section div[style*="position: sticky"] {
             position: relative !important;
             grid-template-columns: 1fr !important;
           }
         }
-        
+
         @media (min-width: 768px) {
           .hidden.md\\:block { display: block !important; }
           .hidden.md\\:grid { display: grid !important; }
           .hidden.md\\:flex { display: flex !important; }
         }
-        
+
         @media (min-width: 768px) and (max-width: 1024px) {
           .hero-grid {
             grid-template-columns: 1fr 320px !important;
             gap: 40px !important;
           }
-          
+
           section {
             padding: 64px 0 !important;
           }
@@ -5149,12 +5258,16 @@ export default function App(props?: any) {
           <TechStackSection />
           <ExperienceSection />
           <EducationSection />
-          <CaseStudiesSection />
+          <React.Suspense fallback={<LazySectionFallback minHeight={720} />}>
+            <CaseStudiesSection />
+          </React.Suspense>
           <BlogSection />
           <HonorsSection />
           <MembershipsSection />
           <CertificationsSection />
-          <FunFactsSection />
+          <React.Suspense fallback={<LazySectionFallback minHeight={720} />}>
+            <FunFactsSection />
+          </React.Suspense>
           <ContactSection />
         </main>
         <footer style={{ background: "#F8F9FA", borderTop: "1px solid rgba(0,0,0,0.06)", padding: "28px 28px", textAlign: "center" }}>

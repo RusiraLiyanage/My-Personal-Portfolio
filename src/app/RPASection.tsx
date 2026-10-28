@@ -13,7 +13,7 @@ export const RPA_DARK  = "#083344";
 function MetaLankaLogo({ height = 36 }: { height?: number }) {
   return (
     <div style={{ background: "#fff", borderRadius: 6, border: "1px solid #E5E7EB", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", flexShrink: 0, padding: "3px 8px" }}>
-      <img src={metatechnoLogo} alt="MetaTechno Lanka" style={{ height: height * 1.5, objectFit: "contain", display: "block" }} />
+      <img loading="lazy" decoding="async" src={metatechnoLogo} alt="MetaTechno Lanka" style={{ height: height * 1.5, objectFit: "contain", display: "block" }} />
     </div>
   );
 }
@@ -267,12 +267,12 @@ export function RPAProjectSection() {
         <div style={{ maxWidth: 1400, margin: "0 auto", padding: "48px 28px 40px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: RPA_TEAL, borderRadius: 2 }} />
-            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: RPA_TEAL, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 07</span>
+            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: RPA_TEAL, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 08</span>
           </div>
 
           {/* Company association */}
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "#F0FDFA", border: "1px solid #99F6E4", borderRadius: 10, padding: "8px 16px", marginBottom: 16 }}>
-            <MetaLankaLogo size={34} />
+            <MetaLankaLogo height={34} />
             <div>
               <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.82rem", color: RPA_TEAL, lineHeight: 1.1 }}>MetaTechno Lanka Company</div>
               <div style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.68rem", color: "#6B7280", marginTop: 2 }}>Colombo, Sri Lanka · Mar 2021 – Aug 2021</div>
@@ -400,7 +400,7 @@ export function RPAProjectSection() {
                       onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 16px ${item.color}40`; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
-                      <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                      <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.75rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" }}>{item.name}</span>
                     </motion.div>
                   ))}
@@ -417,7 +417,7 @@ export function RPAProjectSection() {
           <FadeUp>
             <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
               <div style={{ position: "relative", flexShrink: 0 }}>
-                <img src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${RPA_TEAL}` }} />
+                <img loading="lazy" decoding="async" src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${RPA_TEAL}` }} />
                 <div style={{ position: "absolute", bottom: -2, right: -2, background: RPA_TEAL, borderRadius: "50%", width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid white" }}>
                   <span style={{ fontSize: "0.6rem", color: "#fff" }}>👑</span>
                 </div>

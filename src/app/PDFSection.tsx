@@ -9,7 +9,7 @@ import sampleAssistLogo from "../imports/Lz4lUXSU9geUQ7Shteza2ORUg5l170917691281
 function SampleAssistInlineLogo() {
   return (
     <div style={{ borderRadius: 7, overflow: "hidden", background: "#fff", padding: "3px 7px", border: "1px solid #E5E7EB", display: "flex", alignItems: "center" }}>
-      <img src={sampleAssistLogo} alt="Sample Assist" style={{ width: 140, objectFit: "contain", display: "block" }} />
+      <img loading="lazy" decoding="async" src={sampleAssistLogo} alt="Sample Assist" style={{ width: 140, objectFit: "contain", display: "block" }} />
     </div>
   );
 }
@@ -147,7 +147,7 @@ function PDFTeamSection() {
 
           <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20, paddingBottom: 20, borderBottom: `1px solid ${PDF_BLUE}15` }}>
             <div style={{ position: "relative", flexShrink: 0 }}>
-              <img src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${PDF_BLUE}` }} />
+              <img loading="lazy" decoding="async" src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${PDF_BLUE}` }} />
               <div style={{ position: "absolute", bottom: -2, right: -2, background: PDF_BLUE, borderRadius: "50%", width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid white" }}>
                 <span style={{ fontSize: "0.6rem", color: "#fff" }}>★</span>
               </div>
@@ -165,7 +165,7 @@ function PDFTeamSection() {
               transition={{ duration: 0.4 }}
               style={{ display: "flex", alignItems: "center", gap: 12, background: "#fff", borderRadius: 12, padding: "14px 18px", border: `1px solid ${PDF_BLUE}18`, flex: "1 1 220px", maxWidth: 340 }}
             >
-              <img src={weifongPhoto} alt="Wei Fong" style={{ width: 68, height: 68, borderRadius: "50%", objectFit: "cover", border: `2px solid ${PDF_BLUE}35`, flexShrink: 0 }} />
+              <img loading="lazy" decoding="async" src={weifongPhoto} alt="Wei Fong" style={{ width: 68, height: 68, borderRadius: "50%", objectFit: "cover", border: `2px solid ${PDF_BLUE}35`, flexShrink: 0 }} />
               <div>
                 <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.82rem", color: "#0C0C0C", lineHeight: 1.2 }}>Wei Fong</div>
                 <div style={{ fontSize: "0.7rem", color: "#6B7280", marginTop: 3 }}>Full-Stack Developer · Sample Assist</div>
@@ -185,7 +185,7 @@ export function PDFProjectSection() {
         <div style={{ maxWidth: 1400, margin: "0 auto", padding: "48px 28px 40px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: PDF_BLUE, borderRadius: 2 }} />
-            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: PDF_BLUE, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 06</span>
+            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: PDF_BLUE, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 07</span>
           </div>
 
           {/* Sample Assist association */}
@@ -300,7 +300,7 @@ export function PDFProjectSection() {
                       onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 16px ${item.color}40`; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
-                      <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                      <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.75rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" }}>{item.name}</span>
                     </motion.div>
                   ))}

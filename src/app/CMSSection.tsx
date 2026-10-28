@@ -30,7 +30,7 @@ function CMSBrowserFrame({ src, alt, delay = 0, zoom = 1, originY = "top" }: { s
         <div style={{ flex: 1, background: "#fff", borderRadius: 5, padding: "2px 9px", fontSize: "0.6rem", color: "#9CA3AF", fontFamily: '"Inter", sans-serif', border: "1px solid rgba(0,0,0,0.07)" }}>jcaf2021.conference.lk</div>
       </div>
       <div style={{ overflow: "hidden", ...(zoom > 1 ? { height: 340 } : {}) }}>
-        <img src={src} alt={alt} style={{ width: "100%", display: "block", ...(zoom > 1 ? { transform: `scale(${zoom})`, transformOrigin: `center ${originY}` } : {}) }} />
+        <img loading="lazy" decoding="async" src={src} alt={alt} style={{ width: "100%", display: "block", ...(zoom > 1 ? { transform: `scale(${zoom})`, transformOrigin: `center ${originY}` } : {}) }} />
       </div>
     </motion.div>
   );
@@ -54,7 +54,7 @@ function CMSTeamSection() {
 
           <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20, paddingBottom: 20, borderBottom: `1px solid ${CMS_INDIGO}15` }}>
             <div style={{ position: "relative", flexShrink: 0 }}>
-              <img src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${CMS_INDIGO}` }} />
+              <img loading="lazy" decoding="async" src={profileImage} alt="Rusira Liyanage" style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `3px solid ${CMS_INDIGO}` }} />
               <div style={{ position: "absolute", bottom: -2, right: -2, background: CMS_INDIGO, borderRadius: "50%", width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid white" }}>
                 <span style={{ fontSize: "0.6rem", color: "#fff" }}>★</span>
               </div>
@@ -73,7 +73,7 @@ function CMSTeamSection() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 style={{ display: "flex", alignItems: "center", gap: 12, background: "#fff", borderRadius: 12, padding: "14px 18px", border: `1px solid ${CMS_INDIGO}18`, flex: "1 1 220px" }}
               >
-                <img src={m.photo} alt={m.name} style={{ width: 68, height: 68, borderRadius: "50%", objectFit: "cover", border: `2px solid ${CMS_INDIGO}35`, flexShrink: 0 }} />
+                <img loading="lazy" decoding="async" src={m.photo} alt={m.name} style={{ width: 68, height: 68, borderRadius: "50%", objectFit: "cover", border: `2px solid ${CMS_INDIGO}35`, flexShrink: 0 }} />
                 <div>
                   <div style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 700, fontSize: "0.82rem", color: "#0C0C0C", lineHeight: 1.2 }}>{m.name}</div>
                   <div style={{ fontSize: "0.7rem", color: "#6B7280", marginTop: 3 }}>{m.role}</div>
@@ -199,7 +199,7 @@ export function CMSProjectSection() {
         <div style={{ maxWidth: 1400, margin: "0 auto", padding: "48px 28px 40px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
             <div style={{ width: 36, height: 2, background: CMS_INDIGO, borderRadius: 2 }} />
-            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: CMS_INDIGO, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 05</span>
+            <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.72rem", fontWeight: 700, color: CMS_INDIGO, letterSpacing: "0.2em", textTransform: "uppercase" }}>Featured Project · 06</span>
           </div>
           <h3 style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: "clamp(1.15rem, 2vw, 1.5rem)", color: "#0C0C0C", lineHeight: 1.2, marginBottom: 16, letterSpacing: "-0.01em" }}>
             JCAF2021,{" "}
@@ -253,7 +253,7 @@ export function CMSProjectSection() {
                   <div style={{ flex: 1, background: "#fff", borderRadius: 5, padding: "2px 9px", fontSize: "0.6rem", color: "#9CA3AF", fontFamily: '"Inter", sans-serif', border: "1px solid rgba(0,0,0,0.07)" }}>jcaf2021.conference.lk</div>
                 </div>
                 <div style={{ height: 280, overflow: "hidden" }}>
-                  <img src={item.src} alt={item.alt} style={{ width: "100%", display: "block", transform: `scale(${item.zoom})`, transformOrigin: `center ${item.originY}` }} />
+                  <img loading="lazy" decoding="async" src={item.src} alt={item.alt} style={{ width: "100%", display: "block", transform: `scale(${item.zoom})`, transformOrigin: `center ${item.originY}` }} />
                 </div>
               </div>
             </motion.div>
@@ -311,7 +311,7 @@ export function CMSProjectSection() {
                       onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = `0 4px 16px ${item.color}40`; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
                     >
-                      <img src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                      <img loading="lazy" decoding="async" src={`https://cdn.simpleicons.org/${item.slug}/${item.color.replace("#","")}`} alt={item.name} style={{ width: 16, height: 16, flexShrink: 0 }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
                       <span style={{ fontFamily: '"Inter", sans-serif', fontSize: "0.75rem", fontWeight: 500, color: "#0C0C0C", whiteSpace: "nowrap" }}>{item.name}</span>
                     </motion.div>
                   ))}

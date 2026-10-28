@@ -5,17 +5,17 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import { FadeUp } from "./shared";
 
-import hungryJacksPhoto from "../imports/Screenshot_2026-07-13_at_9.50.36_pm.png";
+import hungryJacksPhoto from "../imports/Screenshot_2026-07-13_at_9.50.36_pm.optimized.webp";
 import bigWBadge from "../imports/400548D9-F7ED-4B2D-8BE8-3619D7A49C1D_4_5005_c.jpeg";
-import kygoOperaHouse from "../imports/Screenshot_2026-07-13_at_10.07.02_pm.png";
-import kygoQudosArena from "../imports/Screenshot_2026-07-13_at_10.11.17_pm.png";
-import oneRepublicCrowd from "../imports/Screenshot_2026-07-13_at_10.12.10_pm.png";
-import concertLights from "../imports/Screenshot_2026-07-13_at_10.11.35_pm.png";
-import accorStadiumSelfie from "../imports/IMG_3604.JPG";
-import accorStadiumFriends from "../imports/IMG_3651-2.JPG";
-import edSheeranConcert from "../imports/IMG_3708.JPG";
-import oneRepublicStage from "../imports/IMG_3740.JPG";
-import edSheeranCrowd from "../imports/Screenshot_2026-07-13_at_10.37.45_pm.png";
+import kygoOperaHouse from "../imports/Screenshot_2026-07-13_at_10.07.02_pm.optimized.webp";
+import kygoQudosArena from "../imports/Screenshot_2026-07-13_at_10.11.17_pm.optimized.webp";
+import oneRepublicCrowd from "../imports/Screenshot_2026-07-13_at_10.12.10_pm.optimized.webp";
+import concertLights from "../imports/Screenshot_2026-07-13_at_10.11.35_pm.optimized.webp";
+import accorStadiumSelfie from "../imports/IMG_3604.optimized.webp";
+import accorStadiumFriends from "../imports/IMG_3651-2.optimized.webp";
+import edSheeranConcert from "../imports/IMG_3708.optimized.webp";
+import oneRepublicStage from "../imports/IMG_3740.optimized.webp";
+import edSheeranCrowd from "../imports/Screenshot_2026-07-13_at_10.37.45_pm.optimized.webp";
 import sunriseAudio from "../imports/Sun_Rise_hope_good_by_DJ_Rusira.mp3";
 import chilloutAudio from "../imports/Chillout_By_DJ_Rusira.mp3";
 import bassTrapAudio from "../imports/Bass_Trap_by_DJ_Rusira.mp3";
@@ -25,19 +25,19 @@ import chasingTheLightsAudio from "../imports/Chasing_The_Lights_by_DJ_Rusira.mp
 
 // ── Concert Section Component ────────────────────────────────────────────────
 
-function ConcertSection({ 
-  artistName, 
-  venue, 
+function ConcertSection({
+  artistName,
+  venue,
   date,
-  color, 
-  photos, 
-  delay = 0 
-}: { 
-  artistName: string; 
-  venue: string; 
+  color,
+  photos,
+  delay = 0
+}: {
+  artistName: string;
+  venue: string;
   date: string;
-  color: string; 
-  photos: string[]; 
+  color: string;
+  photos: string[];
   delay?: number;
 }) {
   return (
@@ -124,7 +124,7 @@ function ConcertSection({
               cursor: "pointer"
             }}
           >
-            <img
+            <img loading="lazy" decoding="async"
               src={photo}
               alt={`${artistName} concert photo ${index + 1}`}
               style={{
@@ -144,19 +144,19 @@ function ConcertSection({
 
 // ── Audio Player Component ────────────────────────────────────────────────
 
-function AudioPlayer({ 
-  title, 
-  artist, 
-  audioSrc, 
-  color, 
-  gradient, 
-  delay = 0 
-}: { 
-  title: string; 
-  artist: string; 
-  audioSrc: string; 
-  color: string; 
-  gradient: string; 
+function AudioPlayer({
+  title,
+  artist,
+  audioSrc,
+  color,
+  gradient,
+  delay = 0
+}: {
+  title: string;
+  artist: string;
+  audioSrc: string;
+  color: string;
+  gradient: string;
   delay?: number;
 }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -215,7 +215,7 @@ function AudioPlayer({
   const progress = duration ? (currentTime / duration) * 100 : 0;
 
   // Waveform bars animation
-  const bars = Array.from({ length: 40 }, (_, i) => i);
+  const bars = Array.from({ length: 24 }, (_, i) => i);
 
   return (
     <motion.div
@@ -234,7 +234,7 @@ function AudioPlayer({
         overflow: "hidden"
       }}
     >
-      <audio ref={audioRef} src={audioSrc} />
+      <audio ref={audioRef} src={audioSrc} preload="none" />
 
       {/* Background Glow */}
       <div style={{
@@ -292,13 +292,13 @@ function AudioPlayer({
                 borderRadius: 2
               }}
               animate={{
-                height: isPlaying 
-                  ? [Math.random() * 30 + 10, Math.random() * 40 + 8, Math.random() * 35 + 12]
-                  : 12
+                height: isPlaying
+                  ? [10 + ((i * 17) % 30), 12 + ((i * 23) % 34), 10 + ((i * 11) % 28)]
+                  : 10 + ((i * 17) % 24)
               }}
               transition={{
-                duration: 0.5 + Math.random() * 0.5,
-                repeat: Infinity,
+                duration: 0.55 + (i % 5) * 0.08,
+                repeat: isPlaying ? Infinity : 0,
                 repeatType: "reverse"
               }}
             />
@@ -418,7 +418,7 @@ export function FunFactsSection() {
                 borderRadius: "50%",
                 filter: "blur(40px)"
               }} />
-              
+
               <div style={{ position: "relative", zIndex: 1 }}>
                 {/* Logo Badge */}
                 <div style={{
@@ -482,8 +482,8 @@ export function FunFactsSection() {
                   boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
                   border: "4px solid rgba(255,255,255,0.2)"
                 }}>
-                  <img 
-                    src={hungryJacksPhoto} 
+                  <img loading="lazy" decoding="async"
+                    src={hungryJacksPhoto}
                     alt="Rusira in Hungry Jack's uniform"
                     style={{
                       width: "100%",
@@ -521,7 +521,7 @@ export function FunFactsSection() {
                 borderRadius: "50%",
                 filter: "blur(40px)"
               }} />
-              
+
               <div style={{ position: "relative", zIndex: 1 }}>
                 {/* Logo Badge */}
                 <div style={{
@@ -609,8 +609,8 @@ export function FunFactsSection() {
                   alignItems: "center",
                   justifyContent: "center"
                 }}>
-                  <img 
-                    src={bigWBadge} 
+                  <img loading="lazy" decoding="async"
+                    src={bigWBadge}
                     alt="Big W name badge - Rusira"
                     style={{
                       width: "100%",
@@ -684,42 +684,42 @@ export function FunFactsSection() {
                 <span style={{ fontSize: "1.2rem" }}>🎵</span>
                 <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontSize: "0.75rem", fontWeight: 700, color: "#fff", letterSpacing: "0.12em", textTransform: "uppercase" }}>Music Enthusiast</span>
               </div>
-              
-              <h2 style={{ 
-                fontFamily: '"Plus Jakarta Sans", sans-serif', 
-                fontSize: "2.4rem", 
-                fontWeight: 800, 
-                color: "#0C0C0C", 
+
+              <h2 style={{
+                fontFamily: '"Plus Jakarta Sans", sans-serif',
+                fontSize: "2.4rem",
+                fontWeight: 800,
+                color: "#0C0C0C",
                 marginBottom: 20,
                 lineHeight: 1.2
               }}>
                 I am a House Music Lover 🎧
               </h2>
-              
-              <p style={{ 
-                fontFamily: '"Inter", sans-serif', 
-                fontSize: "1.05rem", 
-                color: "#71717A", 
+
+              <p style={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: "1.05rem",
+                color: "#71717A",
                 lineHeight: 1.8,
                 marginBottom: 24
               }}>
-                <span style={{ fontWeight: 800, color: "#00D4FF" }}>Tropical House</span> is my passion, and <span style={{ fontWeight: 700, color: "#0C0C0C" }}>KYGO</span> is my all-time favorite artist—the king of sun-soaked melodies that transport you to paradise. 
+                <span style={{ fontWeight: 800, color: "#00D4FF" }}>Tropical House</span> is my passion, and <span style={{ fontWeight: 700, color: "#0C0C0C" }}>KYGO</span> is my all-time favorite artist—the king of sun-soaked melodies that transport you to paradise.
               </p>
-              
-              <p style={{ 
-                fontFamily: '"Inter", sans-serif', 
-                fontSize: "1.05rem", 
-                color: "#71717A", 
+
+              <p style={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: "1.05rem",
+                color: "#71717A",
                 lineHeight: 1.8
               }}>
                 I've been fortunate to support some incredible fellow artists here in Sydney, creating unforgettable memories at some of the city's premier venues! 🌴✨
               </p>
 
               {/* Stats */}
-              <div style={{ 
-                display: "grid", 
-                gridTemplateColumns: "repeat(3, 1fr)", 
-                gap: 20, 
+              <div style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: 20,
                 marginTop: 32,
                 padding: "24px 0"
               }}>
@@ -743,9 +743,9 @@ export function FunFactsSection() {
                     }}
                   >
                     <div style={{ fontSize: "1.5rem", marginBottom: 8 }}>{stat.icon}</div>
-                    <div style={{ 
-                      fontFamily: '"Inter", sans-serif', 
-                      fontSize: "0.7rem", 
+                    <div style={{
+                      fontFamily: '"Inter", sans-serif',
+                      fontSize: "0.7rem",
                       color: "#71717A",
                       textTransform: "uppercase",
                       letterSpacing: "0.08em",
@@ -754,9 +754,9 @@ export function FunFactsSection() {
                     }}>
                       {stat.label}
                     </div>
-                    <div style={{ 
-                      fontFamily: '"Plus Jakarta Sans", sans-serif', 
-                      fontSize: "0.85rem", 
+                    <div style={{
+                      fontFamily: '"Plus Jakarta Sans", sans-serif',
+                      fontSize: "0.85rem",
                       color: "#0C0C0C",
                       fontWeight: 700
                     }}>
@@ -790,9 +790,9 @@ export function FunFactsSection() {
                 zIndex: 1,
                 pointerEvents: "none"
               }} />
-              
+
               {/* Image */}
-              <img
+              <img loading="lazy" decoding="async"
                 src={kygoOperaHouse}
                 alt="KYGO at Sydney Opera House"
                 style={{
@@ -943,7 +943,7 @@ export function FunFactsSection() {
                   margin: "0 auto",
                   fontStyle: "italic"
                 }}>
-                  Here are some demo tracks I've been working on. 
+                  Here are some demo tracks I've been working on.
                   <br />
                   Hoping to finish them as full songs in the future! 🎶
                 </p>
@@ -955,7 +955,7 @@ export function FunFactsSection() {
                 gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
                 gap: 24
               }}>
-                <AudioPlayer 
+                <AudioPlayer
                   title="Sunrise"
                   artist="DJ Rusira"
                   audioSrc={sunriseAudio}
@@ -963,7 +963,7 @@ export function FunFactsSection() {
                   gradient="linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)"
                   delay={0.1}
                 />
-                <AudioPlayer 
+                <AudioPlayer
                   title="Chillout"
                   artist="DJ Rusira"
                   audioSrc={chilloutAudio}
@@ -971,7 +971,7 @@ export function FunFactsSection() {
                   gradient="linear-gradient(135deg, #00D4FF 0%, #0EA5E9 100%)"
                   delay={0.2}
                 />
-                <AudioPlayer 
+                <AudioPlayer
                   title="Bass Trap"
                   artist="DJ Rusira"
                   audioSrc={bassTrapAudio}
@@ -979,7 +979,7 @@ export function FunFactsSection() {
                   gradient="linear-gradient(135deg, #10B981 0%, #059669 100%)"
                   delay={0.3}
                 />
-                <AudioPlayer 
+                <AudioPlayer
                   title="Jump Up"
                   artist="DJ Rusira"
                   audioSrc={jumpUpAudio}
@@ -987,7 +987,7 @@ export function FunFactsSection() {
                   gradient="linear-gradient(135deg, #F59E0B 0%, #D97706 100%)"
                   delay={0.4}
                 />
-                <AudioPlayer 
+                <AudioPlayer
                   title="The Robot Dance"
                   artist="DJ Rusira"
                   audioSrc={robotDanceAudio}
@@ -995,7 +995,7 @@ export function FunFactsSection() {
                   gradient="linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)"
                   delay={0.5}
                 />
-                <AudioPlayer 
+                <AudioPlayer
                   title="Chasing The Lights"
                   artist="DJ Rusira"
                   audioSrc={chasingTheLightsAudio}
@@ -1041,7 +1041,7 @@ export function FunFactsSection() {
                   display: "block",
                   marginBottom: 16
                 }}>✨</span>
-                
+
                 <h3 style={{
                   fontFamily: '"Plus Jakarta Sans", sans-serif',
                   fontSize: "1.5rem",
@@ -1052,7 +1052,7 @@ export function FunFactsSection() {
                 }}>
                   That's a glimpse into my world!
                 </h3>
-                
+
                 <p style={{
                   fontFamily: '"Inter", sans-serif',
                   fontSize: "1rem",
@@ -1062,7 +1062,7 @@ export function FunFactsSection() {
                   margin: "0 auto",
                   fontStyle: "italic"
                 }}>
-                  Beyond the code and projects, I'm passionate about music, live experiences, 
+                  Beyond the code and projects, I'm passionate about music, live experiences,
                   and building meaningful connections. Let's grab a virtual coffee and chat! ☕
                 </p>
               </div>
